@@ -1,0 +1,8 @@
+.show{
+    max-width: 100%;
+    display: none;
+  }
+  .unShow{
+    max-width: 0%;
+    display: block;
+  }

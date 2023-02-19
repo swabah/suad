@@ -1,0 +1,21 @@
+#slidingImage{
+    animation: entry 1.5s ease;
+    transition:opacity 1s ease, transform .9s ease;
+}
+#Blinking{
+    animation: entry 1.5s ease;
+    transition:opacity 1s ease, transform .5s ease;
+}
+@keyframes entry{
+    0%{
+         transform:translateX(4);
+         opacity:0.1;
+    }
+    100%{
+
+       
+        transform:translateX(0);
+        opacity:1;
+    }
+    
+}
