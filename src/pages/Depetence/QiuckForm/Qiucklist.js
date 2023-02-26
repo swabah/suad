@@ -1,9 +1,9 @@
 import React from 'react'
 import QiuckPerson from './QiuckPerson'
-import person1 from '/my program/vs code/react/websites/Ahlussuffa.com/suad/src/pages/img/arshadusthad.jpg'
-import person2 from '/my program/vs code/react/websites/Ahlussuffa.com/suad/src/pages/img/Aliusthad.jpg'
-import person3 from '/my program/vs code/react/websites/Ahlussuffa.com/suad/src/pages/img/shafeequsthad.jpg'
-import person4 from '/my program/vs code/react/websites/Ahlussuffa.com/suad/src/pages/img/salahusthad.jpg'
+import person1 from './PersonImg/arshadusthad.jpg'
+import person2 from './PersonImg/Aliusthad.jpg'
+import person3 from './PersonImg/shafeequsthad.jpg'
+import person4 from './PersonImg/salahusthad.jpg'
 
 function Qiucklist() {
   return (

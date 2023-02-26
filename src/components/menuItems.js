@@ -57,7 +57,7 @@ export const menuItems = [
       ],
     },
     {
-      title: 'Admission',
-      url: '/Admission',
+      title: 'Baithul Hikma',
+      url: '/library',
     },
   ];

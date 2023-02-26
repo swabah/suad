@@ -1,36 +1,35 @@
 import React from 'react'
 import SubHeadings from '../components/SubHeadings'
-// import emailjs from ‘emailjs-com';
-// import { Form, Input, TextArea, Button } from ‘semantic-ui-react';
-// import Swal from ‘sweetalert2';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 function Contact() {
-//   const SERVICE_ID = "**************";
-// const TEMPLATE_ID = "*******";
-// const USER_ID = "****************";
+const SERVICE_ID = "service_onzqpol";
+const TEMPLATE_ID = "template_vg3c00j";
+const ID = "qQiiYM7KIuDBrtTuy";
 
-  // const handleOnSubmit = (e) => {
-  //   e.preventDefault();
-  //   emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-  //     .then((result) => {
-  //       console.log(result.text);
-  //       Swal.fire({
-  //         icon: ‘success',
-  //         title: ‘Message Sent Successfully'
-  //       })
-  //     }, (error) => {
-  //       console.log(error.text);
-  //       Swal.fire({
-  //         icon: ‘error',
-  //         title: ‘Ooops, something went wrong',
-  //         text: error.text,
-  //       })
-  //     });
-  //   e.target.reset()
-  // };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, ID)
+      .then((result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent Successfully'
+        })
+      }, (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        })
+      });
+    e.target.reset()
+  };
 
 
-  // onSubmit={handleOnSubmit} 
+  
 
   return (
     <div class=" bg-gray-100 flex flex-col items-center justify-center">
@@ -47,37 +46,37 @@ function Contact() {
                 <p>Please fill out all the fields.</p>
               </div>
               <div class="lg:col-span-2">
-                <form class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                <form name='Contact__form' onSubmit={handleOnSubmit}  class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
                   <div class="md:col-span-5">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="full_name">Full Name</label>
-                    <input required type="text" name="full_name" placeholder='Your Name' class="h-10 outline-none  border mt-1 rounded px-4 w-full bg-gray-50"/>
+                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_name">Full Name</label>
+                    <input name='user_name' required type="text"  placeholder='Your Name' class="h-10 outline-none  border mt-1 rounded px-4 w-full bg-gray-50"/>
                   </div>
     
                   <div class="md:col-span-5">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="email">Email Address</label>
-                    <input required type="text" name="email" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
+                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_email">Email Address</label>
+                    <input required type="text" name="user_email" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
                       placeholder="email@domain.com" />
                   </div>
     
     
                   <div class="md:col-span-3">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="city">Mobile Number</label>
-                    <input type="text" name="city" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
+                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_number">Mobile Number</label>
+                    <input required type="text" name="user_number" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
                       placeholder="+91 0000000000"/>
                   </div>
                   <div class="md:col-span-2">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="Date of Birth">Date of Birth</label>
-                    <input required type="date" name="address" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50
+                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_birthday">Date of Birth</label>
+                    <input required type="date" name="user_birthday" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50
                     " />
                   </div>
                   <div class="md:col-span-3">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="Subject">Subject</label>
-                    <input required type="text"  placeholder='Your Subject' name="address" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50" />
+                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_subject">Subject</label>
+                    <input required type="text"  placeholder='Your Subject' name="user_subject" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50" />
                   </div>
                   <div class="md:col-span-2">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="Distric">District</label>
-                    <select required name="address" placeholder='Your District' class="h-10 outline-none border mt-1 pr-3 rounded px-4 w-full bg-gray-50">
-                      <option className='bg-gray-900 text-white' value="Select District"></option>
+                    <label  className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_distric">District</label>
+                    <select required name="user_distric" placeholder='Your District' class="h-10 outline-none border mt-1 pr-3 rounded px-4 w-full bg-gray-50">
+                      <option required className='bg-gray-900 text-white' value="Select District"></option>
                       <option value="Kasaragod">Kasaragod</option>
                       <option value="Kannur">Kannur</option>
                       <option value="Wayanad">Wayanad</option>
@@ -95,9 +94,9 @@ function Contact() {
                     </select>
                   </div>
                   <div class="md:col-span-5">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="city">Messege</label>
-                    <textarea class="h-20 py-2 capitalize outline-none border mt-1 rounded px-4 w-full bg-gray-50"
-                     name="" id="" rows="10" placeholder='Something...'></textarea>
+                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_messege">Messege</label>
+                    <textarea required class="h-20 py-2 capitalize outline-none border mt-1 rounded px-4 w-full bg-gray-50"
+                     name="user_message" id="" rows="10" placeholder='Something...'></textarea>
                   </div>
 
                   <div class="md:col-span-5 text-right">

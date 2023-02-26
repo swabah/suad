@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function EventsCard(props) {
   return (
-    <a href="#" class="block rounded-lg p-4 bg-transparent shadow-lg shadow-indigo-100 w-72">
+    <a href="#" class="block rounded-lg p-4 bg-transparent shadow-lg border shadow-indigo-100 w-72">
   <img
     alt="Home"
     src={props.imgE}

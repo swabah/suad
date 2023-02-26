@@ -10,3 +10,10 @@ body{
     position: relative;
     
 }
+body::-webkit-scrollbar {
+    width: 3px;
+    border-radius:5px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #1c415d;
+  }

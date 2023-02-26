@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-// import { SimpleCarouselSlider } from 'react-simple-carousel-image-slider'
 import './Depetence/Style.css'
-import 'react-simple-carousel-image-slider/dist/index.css'
 import Homeeight from './Depetence/Homeeight';
 import HomeFive from './Depetence/HomeFive';
 import HomeFour from './Depetence/HomeFour';
@@ -19,8 +17,17 @@ function Home() {
     "http://ahlussuffadars.in/assets/images/g1.jpg",
     "http://ahlussuffadars.in/assets/images/1.jpg"
   ];
+   const Contents = [
+    'Better Education For A Better World',
+    'Explore the World Of Our Graduates',
+    'Exceptional People  Exceptional Care',
+    'Better Education For A Better World',
+    'Explore the World Of Our Graduates',
+    'Exceptional People  Exceptional Care',
+  ];
   const [current,setCurrent]=useState(0)
     const length = images.length
+    const lengthContent = Contents.length
     
         setTimeout(() => {
             setCurrent (current === length -1 ? 0 : current  + 1)
@@ -28,28 +35,31 @@ function Home() {
   return (
     
     <div className='w-full h-auto '>
-{/* 
-      <div className='h-auto w-full px-5 md:px-12 lg:px-20 xl:px-44 mt-8 rounded -z-30'>
-        <SimpleCarouselSlider
-           images={images} 
-           autoplay={true} 
-           width= "100%" 
-           height="75vh"
-           autplayDelay='3000'
-           //  parallax={true}
-           />
-       </div> */}
        {images.map((slide,index)=>{
         return (
           <div key={index}>
             {index===current ?
-            <img src={slide} className='w-full  h-screen brightness-50 object-cover ' id='slidingImage' alt="" />
-                            
+            <div className='w-full  h-screen bg-black relative '>
+            <img src={slide} className='w-full h-full brightness-50 object-cover ' id='slidingImage' alt="" />
+            {Contents.map((Content,index)=>{
+              return (
+                <div key={index}>
+                {index===current ?
+                  <div id='backdrop' className='absolute  bottom-[35%] bg-opacity-40  drop-shadow-2xl bg-black w-full p-2 xl:p-7 rounded h-auto'>
+                  <h2  id='slidingImage' className='text-xl md:text-2xl lg:text-3xl xl:text-4xl text-[#1c415d] font-bold text-white text-start md:text-center'>{Content}</h2>
+                  </div>
+                  :''           
+                }
+                </div>
+                )
+              })}
+            </div>
             :''
           }
           </div>
         )
        })}
+
        <HomeOne/>
        <HomeTwo/>
        <HOmeThree/>

@@ -2,12 +2,12 @@ import React from 'react'
 
 function Homeeight() {
   return (
-    <div className='w-full  text-[#1c415d] h-[600PX] bg-gray-100 px-44 py-20 '>
+    <div className='w-full  text-[#1c415d] h-[600PX] bg-gray-100 px-5 md:px-12 lg:px-20 xl:px-44 py-20 '>
     <div className='w-full items-start font-light text-gray-700'>
-      <h1><span className='font-bold text-lg pr-1'>#</span>READY TO VISIT  </h1>
+      <h1 className='text-sm md:text-base uppercase'><span className='font-bold lg:text-lg pr-1'>#</span>READY TO VISIT  </h1>
     </div>
     <div className='w-full flex items-center  pt-3 pb-2 justify-between'>
-      <h2 className='text-4xl font-bold'>Our Location</h2>
+      <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Our Location</h2>
     </div>
     <div className='w-full pt-8 drop-shadow-lg'>
         <iframe

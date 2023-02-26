@@ -9,7 +9,7 @@ import links from '../assets/Links';
 function Header() {
  
   return <>
-      <header className='bg-[#e6eaed] w-screen sticky z-50 top-0 flex flex-col h-auto relative'>
+      <header className='bg-[#e6eaed] w-full sticky z-50 top-0 flex flex-col h-auto relative'>
       <div className='w-full h-8 py-3 md:py-0 space-y-2 md:space-y-0 md:h-10 bg-[#032c4b] flex-col md:flex-row items-center justify-center md:justify-between flex px-5 md:px-12 lg:px-20 xl:px-44'>
             <div className='flex space-x-1 w-full justify-between md:justify-start items-center h-5 text-sm text-gray-200  font-thin'>
                 <Link className='border-r-2 pr-10 md:pr-1 border-gray-500 hover:border-gray-600 transition hover:text-gray-500'  to='/'  >Home</Link>
