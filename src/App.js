@@ -12,9 +12,11 @@ import Services from "./pages/Services";
 import Events from "./pages/Events";
 import Gallary from "./pages/Gallary";
 import QiuckContact from "./pages/QiuckContact";
+import {AnimatePresence} from 'framer-motion'
 
 function App() {
   return <>
+  <AnimatePresence>
   <Router>
     <Routes>
       <Route path="/" element={<Layout/>}>
@@ -31,6 +33,7 @@ function App() {
       </Route>
     </Routes>
   </Router>
+  </AnimatePresence>
   </>;
 }
 

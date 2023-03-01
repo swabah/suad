@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { BooksList } from '../data/LibraryData'
 import Book from './Depetence/Library/Book'
 
 function Library() {
@@ -64,9 +65,9 @@ function Library() {
                                 </tr>
                             </thead>
                             <tbody>
-                                <Book name='avatar' writer='swabah' price="50" status="active"/>
-                                <Book name='avatar' writer='swabah' price="50" status="active"/>
-                                <Book name='avatar' writer='swabah' price="50" status="active"/>
+                              {BooksList.map((book)=>(
+                                <Book img={book.img} name={book.name} writer={book.writer} price={book.price} status={book.status}/>
+                              ))}
                             </tbody>
                         </table>
                         <div class="px-5 py-8 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">

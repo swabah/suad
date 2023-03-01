@@ -1,12 +1,11 @@
-import React from 'react'
-import thangal from '../pages/img/thangal.jpg'
-import arshadusthad from '../pages/img/arshadusthad.jpg'
-import salahusthad from '../pages/img/salahusthad.jpg'
-import aliusthad from '../pages/img/Aliusthad.jpg'
+import React, { useState } from 'react'
 import Asathidacard from './Depetence/Asathidacard'
 import SubHeadings from '../components/SubHeadings'
+import { AsathidaData } from '../data/AsathidaData'
+import {motion} from 'framer-motion'
 
 function Asathida() {
+
   return (
     <div className=' w-full text-[#1c415d] h-auto flex flex-col '>
       <SubHeadings subheading='Asathidah'/>
@@ -15,10 +14,9 @@ function Asathida() {
             <p className='pt-5 min-w-52 max-w-[600px] text-gray-600'>As previously mentioned, These are the precious capital of Ahlussuffa,  They are on the way to forge a edutainment culture in Ahlussuffa to serve the community.</p>
         </div>
         <div className='py-12 flex justify-between w-full h-full px-44'>
-            <Asathidacard img={thangal} name="Sayyid Ubaid Nurani Valappattanam"/>
-            <Asathidacard img={arshadusthad} name="Muhammed Arshad Nurani Kamil Saquafi"/>
-            <Asathidacard img={aliusthad} name="Muhammedali Nurani Saquafi"/>
-            <Asathidacard img={salahusthad} name="Swalahudheen Nurani Saquafi"/>
+		{AsathidaData.map((data) => (
+			   <Asathidacard key={data.id} img={data.img} name={data.name}/>
+		))}
         </div>
     </div>
   )

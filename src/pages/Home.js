@@ -11,6 +11,7 @@ import HomeTwo from './Depetence/HomeTwo';
 
 function Home() {
    const images = [
+     "http://ahlussuffadars.in/assets/images/3.jpg",
     "http://ahlussuffadars.in/assets/images/2.jpg",
     "http://ahlussuffadars.in/assets/images/3.jpg",
     "http://ahlussuffadars.in/assets/images/4.jpg",
@@ -31,6 +32,7 @@ function Home() {
     
         setTimeout(() => {
             setCurrent (current === length -1 ? 0 : current  + 1)
+            setCurrent (current === lengthContent -1 ? 0 : current  + 1)
         }, 7000);
   return (
     
@@ -39,14 +41,14 @@ function Home() {
         return (
           <div key={index}>
             {index===current ?
-            <div className='w-full  h-screen bg-black relative '>
-            <img src={slide} className='w-full h-full brightness-50 object-cover ' id='slidingImage' alt="" />
+            <div className='w-full rounded-lg h-[550px]  px-44 pt-10'>
+            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 object-cover rounded-lg ' id='slidingImage' alt="" />
             {Contents.map((Content,index)=>{
               return (
-                <div key={index}>
+                <div className='relative ' key={index}>
                 {index===current ?
-                  <div  className='absolute  bottom-[35%] bg-opacity-40  drop-shadow-2xl bg-black w-full p-2 xl:p-7 rounded h-auto'>
-                  <h2  id='slidingImage' className='text-xl md:text-2xl lg:text-3xl xl:text-4xl text-[#1c415d] font-bold text-white text-start md:text-center'>{Content}</h2>
+                  <div id='Textshadow' className='absolute  bottom-0 rounded-b-lg float-center bg-opacity-30  bg-black w-full p-2 xl:p-5 rounded h-auto'>
+                  <h2   className='text-lg md:text-xl lg:text-2xl xl:text-3xl text-[#1c415d] font-bold text-white text-start md:text-center'>{Content}</h2>
                   </div>
                   :''           
                 }

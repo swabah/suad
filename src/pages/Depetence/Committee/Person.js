@@ -6,7 +6,7 @@ function Person(props) {
            <img
              alt="Person"
              src={props.img}
-             class="absolute inset-0 h-full  rounded-md w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+             class="absolute inset-0 h-full bg-white rounded-md w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
            />
          
            <div class="relative p-5 ">

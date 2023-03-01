@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import EventsCard from './Depetence/Events/EventsCard'
 import tazyin from '../pages/img/events/tazyin.jpg'
 import ilalvisal from '../pages/img/events/ilalvisal.jpg'
@@ -46,3 +46,6 @@ function Events() {
 }
 
 export default Events
+
+
+

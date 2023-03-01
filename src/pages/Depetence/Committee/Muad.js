@@ -4,7 +4,7 @@ import perdemo from './persondemo.png'
 
 function Muad() {
   return (
-    <div className='w-full h-auto mt-20 px-44'>
+    <div className='w-full h-auto mt-20'>
         <div className='flex flex-col w-auto text-start'>
            <h2 className=' text-[#1c415d] font-thin  text-lg tracking-widest pl-1'>SUAD'S</h2>
            <h2 className='font-semibold text-[#16344a]  text-7xl tracking-wider mt-0.5'>MUAD</h2>

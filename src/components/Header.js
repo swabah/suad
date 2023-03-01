@@ -1,13 +1,30 @@
-import {React } from 'react'
+import {React, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaYoutubeSquare,FaInstagram,FaFacebook, FaTable } from "react-icons/fa";
 import logo from './ahlussuffalogo.png'
 import Navbar from './Navbar';
 import links from '../assets/Links';
+import LoginModal from './LoginModal';
 // import Dropdown from './Dropdown';
 
+
 function Header() {
- 
+	const [showModal, setShowModal] = useState(false);
+
+	function showLoginModal() {
+		if (!showModal) {
+			document
+				.getElementsByTagName('html')[0]
+				.classList.add('overflow-y-hidden');
+			setShowModal(true);
+		} else {
+			document
+				.getElementsByTagName('html')[0]
+				.classList.remove('overflow-y-hidden');
+			setShowModal(false);
+		}
+	}
+
   return <>
       <header className='bg-[#e6eaed] w-full sticky z-50 top-0 flex flex-col h-auto relative'>
       <div className='w-full h-8 py-3 md:py-0 space-y-2 md:space-y-0 md:h-10 bg-[#032c4b] flex-col md:flex-row items-center justify-center md:justify-between flex px-5 md:px-12 lg:px-20 xl:px-44'>
@@ -23,9 +40,18 @@ function Header() {
             <a className='transition hover:text-gray-500' href={links.instagram.url}><FaInstagram/></a>
             <a className='transition hover:text-gray-500 pr-5' href={links.facebook.url}><FaFacebook/></a>
             </div>
-            <div className='w-auto h-full text-gray-600'>
-               <button className='px-4 py-0.5 text-sm items-center flex bg-gray-200 font-medium hover:bg-gray-300 rounded'>LOGIN</button>
-            </div>
+            <div className="hidden md:flex">
+						<span
+							onClick={showLoginModal}
+							className="text-md font-general-medium text-white w-auto h-auto rounded-md px-5 py-2.5 duration-300"
+							aria-label="Login to Ahlussuffa"
+						>
+							<div className='w-auto h-full text-gray-600'>
+                     <button className='px-4 py-0.5 text-sm items-center flex bg-gray-200 font-medium hover:bg-gray-300 rounded'>LOGIN</button>
+                   </div>
+						</span>
+				</div>
+            
          </div>
       </div>
          <div className="flex justify-between  items-center h-22 py-1.5 bg-white shadow-md px-5 md:px-12 lg:px-20 xl:px-44">
@@ -37,7 +63,15 @@ function Header() {
            <FaTable/>
            </div>
          </div>
-
+         <div>
+				{showModal ? (
+					<LoginModal
+						onClose={showLoginModal}
+						onRequest={showLoginModal}
+					/>
+				) : null}
+				{showModal ? showLoginModal : null}
+			</div>
        </header>
      {/* <header className="fixed inset-0 bg-white w-screen flex flex-col h-auto relative">
       <div className='w-full h-10 bg-[#032c4b] flex items-center justify-between px-44'>

@@ -4,7 +4,7 @@ import perdemo from './persondemo.png'
 
 function Suad() {
   return (
-    <div className='w-full h-auto mt-20 px-44'>
+    <div className='w-full h-auto mt-20 '>
         <div className='flex flex-col w-auto text-start'>
            {/* <h2 className=' text-[#1c415d] font-thin  text-lg tracking-widest '>S     U      A     D     '     S</h2> */}
            <h2 className='font-semibold text-[#16344a]  text-7xl tracking-wide mt-1'>SUAD</h2>
