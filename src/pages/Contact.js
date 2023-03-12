@@ -2,6 +2,8 @@ import React from 'react'
 import SubHeadings from '../components/SubHeadings'
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { motion } from 'framer-motion';
+import Location from './Depetence/Contact/Location';
 
 function Contact() {
 const SERVICE_ID = "service_onzqpol";
@@ -32,12 +34,13 @@ const ID = "qQiiYM7KIuDBrtTuy";
   
 
   return (
-    <div class=" bg-gray-100 flex flex-col items-center justify-center">
+
+    <div class=" bg-gray-100 flex flex-col items-center justify-center   mt-[60px] md:mt-[77px] lg:mt-[90px]">
       <SubHeadings subheading='Contact Form'/>
-      <div class="mt-16 w-full mx-auto px-5 md:px-12 lg:px-20 xl:px-44">
+      <div class="mt-12 w-full mx-auto  px-2 md:px-7 lg:px-20 ">
         <div>
           <h2 class="font-semibold text-xl text-gray-600">Responsive Form</h2>
-          <p class="text-gray-500 mb-6">Form is mobile responsive. Give it a try.</p>
+          <p class="text-gray-500 mb-4">Form is mobile responsive. Give it a try.</p>
     
           <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
@@ -111,6 +114,7 @@ const ID = "qQiiYM7KIuDBrtTuy";
           </div>
         </div>
       </div>
+      <Location/>
     </div>
   )
 }

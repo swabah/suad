@@ -7,7 +7,7 @@ import ChooseCard from './ChooseCard'
 
 function Whychoose() {
   return (
-   <div className='w-full px-44 text-[#1c415d] h-auto flex flex-col items-center py-20'>
+   <div className='w-full  px-2 md:px-7 lg:px-20  text-[#1c415d] h-auto flex flex-col items-center py-10'>
         <div className='w-full items-start font-light text-gray-700'>
            <h1 className='flex items-center'><span className='font-medium text-2xl pr-1.5'>#</span> WHY CHOOSE</h1>
         </div>

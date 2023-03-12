@@ -1,17 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Banner from './Banner';
+
 
 function Footer() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleOpen = () => {
-    setOpen(!open);
-  };
   return (
-    <div>
-       <button onClick={handleOpen}>Footer</button>
-      {open ? <div>Is Open</div> : ''}
-    </div>
-  )
+    <Banner/>
+  );
 }
 
-export default Footer
+export default Footer;

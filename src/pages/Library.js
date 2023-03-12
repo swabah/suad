@@ -1,91 +1,66 @@
-import React from 'react'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import { BooksList } from '../data/LibraryData'
-import Book from './Depetence/Library/Book'
 
-function Library() {
-  return (
-    <body className="antialiased text-[#1c415d] w-full px-5 md:px-12 lg:px-20 xl:px-44 mt-16 font-sans bg-white">
-        <div class="container mx-auto ">
-            <div class="py-8">
-                <div>
-                    <h2 class="text-2xl font-semibold leading-tight">Book Lists</h2>
-                </div>
-                <div class="my-2 flex sm:flex-row flex-col">
-                    <div class="flex flex-row mb-1 sm:mb-0">
-                        
-                        <div class="relative">
-                            <select
-                                class="appearance-none h-full rounded-l border  block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-l focus:border-r focus:bg-white focus:border-gray-500">
-                                <option>All</option>
-                                <option>Active</option>
-                                <option>Inactive</option>
-                            </select>
-                            <div
-                                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block relative">
-                        <span class="h-full absolute inset-y-0 left-0 flex items-center pl-2">
-                            <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current text-gray-500">
-                                <path
-                                    d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1114.32 4.906l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387A8 8 0 012 10z">
-                                </path>
-                            </svg>
-                        </span>
-                        <input placeholder="Search"
-                            class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none" />
-                    </div>
-                </div>
-                <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-                    <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                        <table class="min-w-full leading-normal">
-                            <thead>
-                                <tr>
-                                    <th
-                                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                        Book name
-                                    </th>
-                                    <th
-                                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                        Writer
-                                    </th>
-                                    <th
-                                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                        Price
-                                    </th>
-                                    <th
-                                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                        Status
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                              {BooksList.map((book)=>(
-                                <Book img={book.img} name={book.name} writer={book.writer} price={book.price} status={book.status}/>
-                              ))}
-                            </tbody>
-                        </table>
-                        <div class="px-5 py-8 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
-                            <div className='flex items-center justify-center w-auto h-auto'>
-                            <div className='p-3 px-4 bg-gray-200 border rounded-l-lg'><FaChevronLeft/></div>
-                               <div className='p-2 px-4 border'>1</div>
-                               <div className='p-2 px-4 border'>2</div>
-                               <div className='p-2 px-4 border'>3</div>
-                               {/* <div className='p-1 px-3 border text-2xl'>+</div> */}
-                            <div className='p-3 px-4 bg-gray-200 border rounded-r-lg'><FaChevronRight/></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-  )
-}
 
-export default Library
+import BooksGrid from './Depetence/Library/Booksgrid';
+import { BooksProvider } from '../Context/BooksContext';
+import { motion } from 'framer-motion';
+import SubHeadings from '../components/SubHeadings';
+import library from './img/img15.jpeg'
+import { useState } from 'react';
+import { FaSortDown, FaSortUp } from 'react-icons/fa';
+
+const Library = () => {
+	const [show1, setshow1] = useState();
+	const [show2, setshow2] = useState();
+	const [show3, setshow3] = useState();
+	return (
+		<div className=' mt-[60px] md:mt-[77px] lg:mt-[90px]'>
+			<SubHeadings subheading='Baithul Hikma'/>
+			<div className='px-2 md:px-7 lg:px-20  py-6 md:py-8  '>
+				<div className='flex flex-col lg:flex-row items-start pb-5 w-full justify-between  lg:mt-10'>
+					<div className='lg:order-2 lg:pl-5 xl:pl-0 w-full lg:w-2/3 space-y-2 md:space-y-5 flex flex-col items-start select-none '>
+        			  	<h2  className='text-base md:text-xl uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded border bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
+        			  	   <span className='uppercase '>Baithul Hikma</span> 
+        			  	</h2>
+						<p className='text-sm md:text-base text-[#1c415d]'>Exhibiting as unrivalled knowledge centre 'Baitul Hikma Library' is the main attraction of Ahlussufa Dars.  contained with a large collection of kithabs and books on different subjects and languages, It has provided with extensive Mutala and reading facilities. It is equipped with advanced systems such as air-conditioning and tele-casting to provide a better learning experience for the students.  Periodicals, student-run magazines, and journal articles are also available here.</p>
+        			</div>
+					<img className='  w-full lg:w-auto h-auto lg:h-56 rounded shadow-lg  mt-5 lg:mt-0 ' src={library} alt="" />
+				</div>
+				<div className='mt-8'>
+					<div className='cursor-pointer relative flex items-center justify-between'>
+					 <h2 onClick={()=>{setshow1(!show1)}} className='bg-[#72bf44] text-white text-sm pr-8   md:text-lg  uppercase w-full rounded-t px-5  transition duration-500 py-3'>Integrated studies between Islam  science</h2>
+					 <p className={`absolute  ${show1 ? 'hidden top-3':''} text-2xl top-1.5 transition duration-500 transform text-white right-5`}> <FaSortDown/></p> 
+					 <p className={`absolute top-4 ${show1 ? 'flex':'hidden'} text-2xl text-white right-5`}> <FaSortUp/></p> 
+					</div>
+					 <h2 className={`bg-[#72bf44] ${ show1 ? "py-3 h-full text-opacity-90" : "h-0 py-0"} text-white  transition duration-500 capitalize text-xs md:text-base  w-full rounded-b px-5`}>Integrated studies between Islam  science Complete degree in science disciplines</h2>
+				</div>
+				<div className='mt-5'>
+					<div className='cursor-pointer relative flex items-center justify-between'>
+					 <h2 onClick={()=>{setshow2(!show2)}} className='bg-[#72bf44] text-white text-sm pr-8   md:text-lg  uppercase w-full rounded-t px-5 py-3'>Integrated studies between Islam  science</h2>
+					 <p className={`absolute top-1.5 ${show2 ? 'hidden':'flex'} text-2xl text-white right-5`}> <FaSortDown/></p> 
+					 <p className={`absolute top-4 ${show2 ? 'flex':'hidden'} text-2xl text-white right-5`}> <FaSortUp/></p> 
+					</div>
+					 <h2 className={`bg-[#72bf44] ${ show2 ? "py-3 h-full text-opacity-90" : "h-0 py-0"} text-white transition capitalize  w-full text-xs md:text-base rounded-b px-5`}>Integrated studies between Islam  science Complete degree in science disciplines</h2>
+				</div>
+				<div className='mt-5'>
+					<div className='cursor-pointer relative flex items-center justify-between'>
+					 <h2 onClick={()=>{setshow3(!show3)}} className='bg-[#72bf44] text-white text-sm pr-8   md:text-lg  uppercase w-full rounded-t px-5 py-3'>Integrated studies between Islam  science</h2>
+					 <p className={`absolute top-1.5 ${show3 ? 'hidden':'flex'} text-2xl text-white right-5`}> <FaSortDown/></p> 
+					 <p className={`absolute top-4 ${show3 ? 'flex':'hidden'} text-2xl text-white right-5`}> <FaSortUp/></p> 
+					</div>
+					 <h2 className={`bg-[#72bf44] ${ show3 ? "py-3 h-full text-opacity-90" : "h-0 py-0"} text-white transition capitalize  w-full text-xs md:text-base rounded-b px-5`}>Integrated studies between Islam  science Complete degree in science disciplines</h2>
+				</div>
+				<div className='mt-12'>
+					<h2 className='font-medium text-lg text-[#1c415d] cursor-progress'>Loading features...</h2>
+				</div>
+			</div>
+		{/* <BooksProvider>
+			<div className="px-2 md:px-7 lg:px-20  py-4 md:py-8 ">
+				<BooksGrid />
+			</div>
+		</BooksProvider> */}
+		</div>
+	);
+};
+
+export default Library;
+

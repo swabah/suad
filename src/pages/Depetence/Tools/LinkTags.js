@@ -3,10 +3,11 @@ import { FaArrowRight } from 'react-icons/fa'
 
 function LinkTags(props) {
   return (
-    <div className='w-auto text-xs md:text-sm lg:text-base h-auto py-1 border-gray-400  border-b-[1px] hover:border-[#1c415d] transition flex items-center space-x-1 lg:space-x-3'>
+    <div className='w-auto text-xs text-[#72bf44] md:text-sm lg:text-base h-auto py-1 border-[#72bf44]  border-b-[2px] hover:border-b-[3px] rounded-b-sm transition flex items-center justify-between space-x-1 lg:space-x-2'>
           <a href="">{props.name}
           </a>
-          <FaArrowRight/>
+          <FaArrowRight className='font-thin text-sm'/>
+          {/* <span aria-hidden="true">→</span> */}
       </div>
   )
 }

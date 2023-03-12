@@ -2,12 +2,12 @@ import React from 'react'
 import { useCountUp } from 'react-countup';
 
 function HomeOne() {
-  	useCountUp({ ref: '1', end: 6, duration: 2 });
-	useCountUp({ ref: '2', end: 120, duration: 2 });
-	useCountUp({ ref: '3', end: 46, duration: 2 });
-	useCountUp({ ref: '4', end: 20, duration: 2 });
+  	useCountUp({ ref: '1', end: 6, duration: 7 });
+	useCountUp({ ref: '2', end: 120, duration: 7 });
+	useCountUp({ ref: '3', end: 46, duration: 7 });
+	useCountUp({ ref: '4', end: 20, duration: 7 });
   return (
-    <div className='w-full mt-24  py-9 md:py-16 lg:py-24 h-auto px-5 md:px-12 lg:px-20 xl:px-44'>
+    <div className='w-full mt-16  py-7 md:py-12 lg:py-14 h-auto  px-2 md:px-7 lg:px-20 '>
       <div className='w-full h-full grid grid-cols-2 gap-y-7 md:grid-cols-4 text-[#35566f] items-center justify-center '>
         <Status count={<span id='1'/>} measurement='+' name='ASATHIDA'/>
         <Status count={<span id='2'/>} measurement='+' name='STUDENTS'/>

@@ -1,26 +1,30 @@
 import React from "react";
 import './App.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import Layout from "./components/Layout";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Library from "./pages/Library";
-import PreMessege from "./pages/PreMessege";
-import Committee from "./pages/Committee";
-import Asathida from "./pages/Asathida";
-import Services from "./pages/Services";
-import Events from "./pages/Events";
-import Gallary from "./pages/Gallary";
-import QiuckContact from "./pages/QiuckContact";
-import {AnimatePresence} from 'framer-motion'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Library from './pages/Library'
+import Services from './pages/Services'
+import Events from './pages/Events'
+import PreMessege from './pages/PreMessege'
+import Committee from './pages/Committee'
+import Asathida from './pages/Asathida'
+import QiuckContact from './pages/QiuckContact'
+import Photos from "./pages/Photos";
+import Videos from "./pages/Videos";
+import Layout from "./assets/Layout";
+
+
+
 
 function App() {
   return <>
-  <AnimatePresence>
   <Router>
     <Routes>
       <Route path="/" element={<Layout/>}>
-        <Route index path="/" element={<Home/>} />
+        <Route index element={<Home/>} />
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/library" element={<Library/>}/>
         <Route path="/Services" element={<Services/>}/>
@@ -28,12 +32,12 @@ function App() {
         <Route path="/PreMessege" element={<PreMessege/>}/>
         <Route path="/Committee" element={<Committee/>}/>
         <Route path="/Asathida" element={<Asathida/>}/>
-        <Route path="/gallery" element={<Gallary/>}/>
+        <Route path="/Photos" element={<Photos/>}/>
+        <Route path="/Videos" element={<Videos/>}/>
         <Route path="/QiuckContact" element={<QiuckContact/>}/>
       </Route>
     </Routes>
   </Router>
-  </AnimatePresence>
   </>;
 }
 
