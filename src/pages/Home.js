@@ -23,7 +23,7 @@ function Home() {
    const Contents = [
     'Better education for a better world',
     'Explore the world of our graduates',
-    'Exceptional people exceptional care',
+    // 'Exceptional people exceptional care',
     'Better education for a better world',
     // 'Explore the world of our graduates',
     // 'Exceptional people exceptional care',
