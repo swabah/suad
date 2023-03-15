@@ -6,7 +6,6 @@ function Footer() {
   return (
     <div>
        <Banner/>
-      hi , i am footer
     </div>
   );
 }

@@ -46,7 +46,7 @@
     background-color: #1c415d46;
 }
 #Eventtext::-webkit-scrollbar{
-    height: 4px;
+    height: 2px;
 }
 #Eventtext::-webkit-scrollbar-thumb{
     border-radius:15px;

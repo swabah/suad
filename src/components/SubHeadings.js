@@ -5,7 +5,7 @@ import img from '../pages/img/IMG_2747.JPG'
 
 function SubHeadings(props) {
   return (
-    <div className='w-full  relative h-full bg-cover bg-center bg-no-repeat bg-gradient-to-t from-[#72bf44] via-[#72bf44] to-[#000000d5]  pt-[60px] md:pt-[77px] lg:pt-[125px] '
+    <div className='w-full  relative h-full bg-cover bg-center bg-no-repeat bg-gradient-to-t from-[#72bf44] via-[#72bf44] to-[#000000d5]  pt-[85px] md:pt-[77px] lg:pt-[125px] '
     //  style={{backgroundImage:`url(${img})`}}
      >
         {/* <img className='w-full left-0 -z-10 h-full brightness-50 opacity-80 saturate-150 absolute ' src={shade} alt="" /> */}

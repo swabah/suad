@@ -9,7 +9,7 @@ import { EventData } from '../../data/EventlistData'
 function Homeseven() {
     const link = 'www.facebook.com/ahlussuffadars/'
   return (
-    <div className='w-full space-y-3 text-[#1c415d] h-auto bg-gray-100  px-2 md:px-7 lg:px-20  py-4 md:py-8 lg:py-12 xl:py-14 '>
+    <div className='w-full space-y-3 text-[#1c415d] h-auto bg-gray-100  px-2 md:px-7 lg:px-20  py-7 md:py-10 lg:py-12 xl:py-14 '>
      <div className='w-full flex items-center md:pt-1  pb-2 justify-between'>
        <h2 className='text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold'>Program & Occasions</h2>
        <Link to='/Event'>

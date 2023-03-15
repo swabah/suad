@@ -24,15 +24,15 @@ export default function Nav() {
     }
   return (
     <header>
-      <nav className={`flex justify-between ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#1c415d] drop-shadow-lg transition duration py-3.5 h-24 bg-white bg-opacity-90' : 'text-[#fff] drop-shadow-2xl h-32 py-4.5'} z-30 fixed top-0 items-center w-full bg-transparent   px-2 md:px-7 lg:px-20 `} aria-label="Global">
+      <nav className={`flex justify-between ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#1c415d] shadow-lg transition duration py-3.5 h-16 md:h-20 lg:h-24 bg-white bg-opacity-90' : 'text-[#fff] h-20 md:h-32 py-4.5'} z-30 fixed top-0 items-center w-full bg-transparent px-2 md:px-7 lg:px-20 `} aria-label="Global">
         <div className="flex lg:flex-1">
           {fix ?
            <Link className='' to='/'>
-              <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill' src={logo} alt="Logo" />
+              <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill drop-shadow-sm' src={logo} alt="Logo" />
            </Link>
            :
            <Link className='' to='/'>
-              <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill' src={logo1} alt="Logo" />
+              <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill drop-shadow-sm' src={logo1} alt="Logo" />
            </Link>
            }
         </div>
@@ -214,7 +214,7 @@ export default function Nav() {
             <div className="-m-1.5 p-1.5">
               <span className="sr-only">Ahlussuffa Dars</span>
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto md:hidden"
                 src={logo}
                 alt=""
               />

@@ -4,7 +4,6 @@ import arshadusthad from './img/arshadusthad.jpg'
 import bg1 from './img/bg1.png'
 import bg2 from './img/bg2.png'
 import bg3 from './img/bg3.png'
-import { motion } from 'framer-motion'
 
 function PreMessege() {
   return (
@@ -14,7 +13,12 @@ function PreMessege() {
         {/* <div className='pt-16 '>
         <h1 className=' text-4xl font-bold '>President's Messege</h1>
         </div> */}
-        <div className='w-full h-auto mt-8 xl:mt-16 xl:pb-20 text-lg flex flex-col md:flex-row items-center justify-between   px-2 md:px-7 lg:px-20  mt-12'>
+            <div className='w-full  flex flex-col items-start select-none  px-2 md:px-7 lg:px-20  mt-7 md:mt-12'>
+        		  	<h2  className='text-base md:text-xl uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded border bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
+        		  	   <span className='uppercase '>President's Messege</span> 
+        		  	</h2>
+        		</div>
+        <div className='w-full h-auto mt-3 md:mt-7 pb-10 md:pb-16 xl:pb-20 text-lg flex flex-col md:flex-row items-center justify-between   px-2 md:px-7 lg:px-20 '>
             <div className='md:w-1/2 h-full text-gray-600'>
                 <p className='text-sm lg:text-base'>Ahlussuffa deals with many activities to build up high qualified Islamic scholars under Ahlussunnah wal Jama’a. Our intention is to keep up the way of Prophet Muhammed (S.A.W). Ahlussuffa is blessed with the Edu-Friendly Atmosphere of Thathoor Shuhada Maqam and Spiritual guidance of Thathoor shuhada. And also the mindful interventions of thathoor natives gives us an extra energy to fly high.</p> 
                 <p className='text-sm lg:text-base'>Usthad Arshad Nurani Kamil Saquafi, The Invincible charioteer of Ahlussuffa dars. He completed his islamic studies from Jamia Madeenathunnoor and India's biggest islamic educational institution Jamia Markazussaquafatthissunniyya and also he completed his post graduation in M.sc Psychology. Now he serving for the community by nurturing valueble products to propogate the holy islamic religion.</p>

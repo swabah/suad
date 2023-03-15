@@ -1,3 +1,27 @@
+// SuffaMehfil2k22Des importing
+import Des1 from '../pages/img/SuffaMehfil/IMG_5506.CR2'
+import Des2 from '../pages/img/SuffaMehfil/IMG_5521.CR2'
+import Des3 from '../pages/img/SuffaMehfil/IMG_5526.CR2'
+import Des4 from '../pages/img/SuffaMehfil/IMG_5564.CR2'
+import Des5 from '../pages/img/SuffaMehfil/IMG_5568.CR2'
+import Des6 from '../pages/img/SuffaMehfil/IMG_5633.CR2'
+import Des7 from '../pages/img/SuffaMehfil/IMG_5792.CR2'
+import Des8 from '../pages/img/SuffaMehfil/IMG_6311.CR2'
+import Des9 from '../pages/img/SuffaMehfil/IMG_6519.CR2'
+import Des10 from '../pages/img/SuffaMehfil/IMG_6599.CR2'
+import Des11 from '../pages/img/SuffaMehfil/IMG_6874.CR2'
+import Des12 from '../pages/img/SuffaMehfil/IMG_6905.CR2'
+import Des13 from '../pages/img/SuffaMehfil/IMG_6940.CR2'
+import Des14 from '../pages/img/SuffaMehfil/IMG_7041.CR2'
+import Des15 from '../pages/img/SuffaMehfil/IMG_7043.CR2'
+import Des16 from '../pages/img/SuffaMehfil/IMG_7045.CR2'
+import Des17 from '../pages/img/SuffaMehfil/IMG_7084.CR2'
+import Des18 from '../pages/img/SuffaMehfil/IMG_7098.CR2'
+import Des19 from '../pages/img/SuffaMehfil/IMG_7115.CR2'
+import Des20 from '../pages/img/SuffaMehfil/IMG_7116.CR2'
+import Des21 from '../pages/img/SuffaMehfil/IMG_7118.CR2'
+import Des22 from '../pages/img/SuffaMehfil/IMG_7119.CR2'
+// DarsGroundPhoto importing
 import photo1 from '../pages/img/img1.jpeg'
 import photo2 from '../pages/img/img2.jpeg'
 import photo3 from '../pages/img/img3.jpeg'
@@ -28,152 +52,215 @@ import photo29 from '../pages/img/4.jpg'
 
 
 export const GallaryData={
-    PhotosData :[
+    SuffaMehfil2k22Des :[
+        {
+            img: Des1,
+            id:'01'
+        },
+        {
+            img: Des2,
+            id:'02'
+        },
+        {
+            img: Des3,
+            id:'03'
+        },
+        {
+            img: Des4,
+            id:'04'
+        },
+        {
+            img: Des5,
+            id:'05'
+        },
+        {
+            img: Des6,
+            id:'06'
+        },
+        {
+            img: Des7,
+            id:'07'
+        },
+        {
+            img: Des8,
+            id:'08'
+        },
+        {
+            img: Des9,
+            id:'09'
+        },
+        {
+            img: Des10,
+            id:'10'
+        },
+        {
+            img: Des11,
+            id:'11'
+        },
+        {
+            img: Des12,
+            id:'12'
+        },
+        {
+            img: Des13,
+            id:'13'
+        },
+        {
+            img: Des14,
+            id:'14'
+        },
+        {
+            img: Des15,
+            id:'15'
+        },
+        {
+            img: Des16,
+            id:'16'
+        },
+        {
+            img: Des17,
+            id:'17'
+        },
+        {
+            img: Des18,
+            id:'18'
+        },
+        {
+            img: Des19,
+            id:'19'
+        },
+        {
+            img: Des20,
+            id:'20'
+        },
+        {
+            img: Des21,
+            id:'21'
+        },
+        {
+            img: Des22,
+            id:'22'
+        },
+    ],
+    DarsGroundPhoto :[
         {
             img : photo1, 
             id:'01',
-            
         },
         {
             img : photo2, 
             id:'01',
-            
         },
         {
             img : photo3, 
             id:'01',
-            
         },
         {
             img : photo4, 
             id:'01',
-            
         },
         {
             img : photo5, 
             id:'01',
-            
         },
         {
             img : photo6, 
             id:'01',
-            
         },
         {
             img : photo7,
             id:'01',
-            
         },
         {
             img : photo8, 
             id:'01',
-            
         },
         {
             img : photo9,
             id:'01',
-            
         },
         {
             img : photo10,
             id:'01',
-            
         },
         {
             img : photo11,
             id:'01',
-            
         },
         {
             img : photo12,
             id:'01',
-            
         },
         {
             img : photo13,
             id:'01',
-            
         },
         {
             img : photo14,
             id:'01',
-            
         },
         {
             img : photo15,
             id:'01',
-            
         },
         {
             img : photo17,
             id:'01',
-            
         },
         {
             img : photo18,
             id:'01',
-            
         },
         {
             img : photo20,
             id:'01',
-            
         },
         {
             img : photo21,
             id:'01',
-            
         },
         {
             img : photo22,
             id:'01',
-            
         },
         {
             img : photo23,
             id:'01',
-            
         },
         {
             img : photo24,
             id:'01',
-            
         },
         {
             img : photo25,
             id:'01',
-            
         },
         {
             img : photo26,
             id:'01',
-            
         },
         {
             img : photo27,
             id:'01',
-            
         },
         {
             img : photo28,
             id:'01',
-            
         },
         {
             img : photo29,
             id:'01',
-            
         },
     ],
     VideosData :[
         {
             vidID : 'KLJB_xhyGE0',
             id:'01',
-            title:'LGBTQIA+; ഇസ്ലാമിന് പറയാനുള്ളത് '
+            title:'GBTQIA+; ഇസ്ലാമിന് പറയാനുള്ളത് '
         },
         {
             vidID : 'AZNtlB_H38o',
-            id:'02',
+            id:'',
             title:'തിരുനബി വിവാഹങ്ങളും വിവാദങ്ങളും'
         },
         {

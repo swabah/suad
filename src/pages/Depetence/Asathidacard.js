@@ -3,7 +3,7 @@ import React from 'react'
 
 function Asathidacard(props) {
   return (
-    <div key={props.id} className=' h-full w-full h-72 xl:h-72 bg-white flex items-center justify-center'>
+    <div key={props.id} className=' h-full w-full  xl:h-72 bg-white flex items-center justify-center'>
         <div className="group drop-shadow-lg relative block h-full w-full rounded-lg">
           <span className="absolute inset-0 border-2 border-dashed border-black rounded-lg"></span>
           <div  className="relative flex h-full transform items-end bg-white rounded-lg transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2" >

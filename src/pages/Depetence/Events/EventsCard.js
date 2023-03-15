@@ -26,7 +26,7 @@ function EventsCard(props) {
 				ease: 'easeInOut',
 				duration: 0.7,
 				delay: 0.15,
-			}} className='w-full md:w-80 lg:w-1/4  h-auto lg:p-0.5 xl:p-2'>
+			}} className='w-full md:w-56 lg:w-72 xl:w-80 h-auto lg:p-0.5 xl:p-2'>
 
     <div onClick={showLoginBook}  className="cursor-pointer block rounded-lg p-4 bg-transparent shadow-lg border-2 shadow-indigo-100 w-full h-full">
         <img alt="Home" src={props.imgE}  className="w-full h-auto lg:h-44 xl:h-52 drop-shadow-md rounded-md object-cover" />

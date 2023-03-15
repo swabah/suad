@@ -11,9 +11,9 @@ function PhotosItem(props) {
 				duration: 0.7,
 				delay: 0.15,
 			}}
-    className='w-full h-full' key={props.id}
+    className='w-full h-full drop-shadow-md ' key={props.id}
     >
-      <img className='w-full  h-full rounded object-cover' src={props.img} alt="" />
+      <img className='w-full  h-full  object-cover' src={props.img} alt="" />
     </motion.div>
   )
 }

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function HomeFive() {
   return (
    <div  style={{backgroundImage: `url(http://ahlussuffadars.in/assets/images/1.jpg)`}} className='w-full h-auto xl:h-[400px]  bg-center bg-cover bg-fixed '>
-    <div className='w-full h-full flex flex-col justify-center bg-black bg-opacity-70  text-[#ffff]  px-2 md:px-7 lg:px-20  py-5 md:py-8 lg:py-12'>
+    <div className='w-full h-full flex flex-col justify-center bg-black bg-opacity-70  text-[#ffff]  px-2 md:px-7 lg:px-20  py-7 md:py-10 lg:py-12'>
              <div className='w-full h-auto md:items-center flex flex-col pb-3 md:pb-5 lg:pb-7  space-y-3'>
               <h1 className='text-sm md:text-xl lg:text-2xl xl:text-3xl font-medium'>JOIN THE AHLUSSUFFA FAMILY TODAY</h1>
               <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold md:text-center'>join with us to experience <br /> real edutainmental atmosphere</h2>

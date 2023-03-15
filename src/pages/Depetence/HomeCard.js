@@ -2,7 +2,7 @@ import React from 'react'
 
 function HomeCard(props) {
   return (
-    <article className="rounded-xl   duration-300 h-auto w-full md:w-1/2 lg:w-1/3 ">
+    <article className="rounded-xl   duration-300 h-full w-full ">
       <div href="#" className='flex flex-col items-center  relative'>
         <div className="drop-shadow-xl hover:drop-shadow-xl  flex items-center md:justify-center overflow-hidden w-full">
           {/* <img className='absolute w-32 md:w-60 -top-10 rotate-12 -right-16' src={props.arrow} alt="" /> */}
