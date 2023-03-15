@@ -28,23 +28,23 @@ function EventsCard(props) {
 				delay: 0.15,
 			}} className='w-full md:w-80 lg:w-1/4  h-auto lg:p-0.5 xl:p-2'>
 
-    <div onClick={showLoginBook}  class="cursor-pointer block rounded-lg p-4 bg-transparent shadow-lg border-2 shadow-indigo-100 w-full h-full">
-        <img alt="Home" src={props.imgE}  class="w-full h-auto lg:h-44 xl:h-52 drop-shadow-md rounded-md object-cover" />
-        <div class="mt-2 w-full h-full">
+    <div onClick={showLoginBook}  className="cursor-pointer block rounded-lg p-4 bg-transparent shadow-lg border-2 shadow-indigo-100 w-full h-full">
+        <img alt="Home" src={props.imgE}  className="w-full h-auto lg:h-44 xl:h-52 drop-shadow-md rounded-md object-cover" />
+        <div className="mt-2 w-full h-full">
           <div>
             <div>
-              <h2 class="text-sm font-bold pt-2 text-[#1c415d] uppercase">{props.head}</h2>
+              <h2 className="text-sm font-bold pt-2 text-[#1c415d] uppercase">{props.head}</h2>
             </div>
             <div>
-              <h2 id='Eventtext' class="select-none py-2 lg:py-0 lg:pb-2 xl:py-2 mt-1.5 font-medium text-xs whitespace-nowrap overflow-y-hidden ">{props.para}</h2>
-              {/* <a href={props.link} class="font-medium text-xs text-blue-700 mt-0.5 underline underline-offset-1">Read more</a> */}
+              <h2 id='Eventtext' className="select-none py-2 lg:py-0 lg:pb-2 xl:py-2 mt-1.5 font-medium text-xs whitespace-nowrap overflow-y-hidden ">{props.para}</h2>
+              {/* <a href={props.link} className="font-medium text-xs text-blue-700 mt-0.5 underline underline-offset-1">Read more</a> */}
             </div>
           </div>
       
-          {/* <div class="mt-4 flex items-center gap-5 text-xs">
-            <div class="sm:inline-flex sm:shrink-0 sm:items-center">
+          {/* <div className="mt-4 flex items-center gap-5 text-xs">
+            <div className="sm:inline-flex sm:shrink-0 sm:items-center">
             <svg
-            class="h-4 w-4 text-indigo-700"
+            className="h-4 w-4 text-indigo-700"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
                 viewBox="0 0 24 24"
@@ -58,16 +58,16 @@ function EventsCard(props) {
                 />
               </svg>
       
-              <div class="mt-1.5 sm:ml-3 sm:mt-0">
-                <p class="text-gray-500">Parking</p>
+              <div className="mt-1.5 sm:ml-3 sm:mt-0">
+                <p className="text-gray-500">Parking</p>
       
-                <p class="font-medium">2 spaces</p>
+                <p className="font-medium">2 spaces</p>
               </div>
             </div>
       
-            <div class="sm:inline-flex sm:shrink-0 sm:items-center">
+            <div className="sm:inline-flex sm:shrink-0 sm:items-center">
               <svg
-                class="h-4 w-4 text-indigo-700"
+                className="h-4 w-4 text-indigo-700"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -81,16 +81,16 @@ function EventsCard(props) {
                 />
               </svg>
       
-              <div class="mt-1.5 sm:ml-3 sm:mt-0">
-                <p class="text-gray-500">Bathroom</p>
+              <div className="mt-1.5 sm:ml-3 sm:mt-0">
+                <p className="text-gray-500">Bathroom</p>
       
-                <p class="font-medium">2 rooms</p>
+                <p className="font-medium">2 rooms</p>
               </div>
             </div>
       
-            <div class="sm:inline-flex sm:shrink-0 sm:items-center">
+            <div className="sm:inline-flex sm:shrink-0 sm:items-center">
               <svg
-                class="h-4 w-4 text-indigo-700"
+                className="h-4 w-4 text-indigo-700"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -104,10 +104,10 @@ function EventsCard(props) {
                 />
               </svg>
       
-              <div class="mt-1.5 sm:ml-3 sm:mt-0">
-                <p class="text-gray-500">Bedroom</p>
+              <div className="mt-1.5 sm:ml-3 sm:mt-0">
+                <p className="text-gray-500">Bedroom</p>
       
-                <p class="font-medium">4 rooms</p>
+                <p className="font-medium">4 rooms</p>
                 </div>
             </div>
           </div> */}

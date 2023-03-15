@@ -4,7 +4,10 @@ import Banner from './Banner';
 
 function Footer() {
   return (
-    <Banner/>
+    <div>
+       <Banner/>
+      hi , i am footer
+    </div>
   );
 }
 

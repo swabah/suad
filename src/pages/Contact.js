@@ -2,7 +2,6 @@ import React from 'react'
 import SubHeadings from '../components/SubHeadings'
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-import { motion } from 'framer-motion';
 import Location from './Depetence/Contact/Location';
 
 function Contact() {
@@ -35,50 +34,50 @@ const ID = "qQiiYM7KIuDBrtTuy";
 
   return (
 
-    <div class=" bg-gray-100 flex flex-col items-center justify-center   mt-[60px] md:mt-[77px] lg:mt-[90px]">
+    <div className=" bg-white flex flex-col items-center justify-center ">
       <SubHeadings subheading='Contact Form'/>
-      <div class="mt-12 w-full mx-auto  px-2 md:px-7 lg:px-20 ">
+      <div className="mt-12 w-full mx-auto  px-2 md:px-7 lg:px-20 ">
         <div>
-          <h2 class="font-semibold text-xl text-gray-600">Responsive Form</h2>
-          <p class="text-gray-500 mb-4">Form is mobile responsive. Give it a try.</p>
+          <h2 className="font-semibold text-xl text-gray-600">Responsive Form</h2>
+          <p className="text-gray-500 mb-4">Form is mobile responsive. Give it a try.</p>
     
-          <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-              <div class="text-gray-600">
-                <p class="font-medium text-lg">Personal Details</p>
+          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+            <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+              <div className="text-gray-600">
+                <p className="font-medium text-lg">Personal Details</p>
                 <p>Please fill out all the fields.</p>
               </div>
-              <div class="lg:col-span-2">
-                <form name='Contact__form' onSubmit={handleOnSubmit}  class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
-                  <div class="md:col-span-5">
+              <div className="lg:col-span-2">
+                <form name='Contact__form' onSubmit={handleOnSubmit}  className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                  <div className="md:col-span-5">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_name">Full Name</label>
-                    <input name='user_name' required type="text"  placeholder='Your Name' class="h-10 outline-none  border mt-1 rounded px-4 w-full bg-gray-50"/>
+                    <input name='user_name' required type="text"  placeholder='Your Name' className="h-10 outline-none  border mt-1 rounded px-4 w-full bg-gray-50"/>
                   </div>
     
-                  <div class="md:col-span-5">
+                  <div className="md:col-span-5">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_email">Email Address</label>
-                    <input required type="text" name="user_email" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
+                    <input required type="text" name="user_email" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
                       placeholder="email@domain.com" />
                   </div>
     
     
-                  <div class="md:col-span-3">
+                  <div className="md:col-span-3">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_number">Mobile Number</label>
-                    <input required type="text" name="user_number" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
+                    <input required type="text" name="user_number" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
                       placeholder="+91 0000000000"/>
                   </div>
-                  <div class="md:col-span-2">
+                  <div className="md:col-span-2">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_birthday">Date of Birth</label>
-                    <input required type="date" name="user_birthday" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50
+                    <input required type="date" name="user_birthday" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50
                     " />
                   </div>
-                  <div class="md:col-span-3">
+                  <div className="md:col-span-3">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_subject">Subject</label>
-                    <input required type="text"  placeholder='Your Subject' name="user_subject" class="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50" />
+                    <input required type="text"  placeholder='Your Subject' name="user_subject" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50" />
                   </div>
-                  <div class="md:col-span-2">
+                  <div className="md:col-span-2">
                     <label  className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_distric">District</label>
-                    <select required name="user_distric" placeholder='Your District' class="h-10 outline-none border mt-1 pr-3 rounded px-4 w-full bg-gray-50">
+                    <select required name="user_distric" placeholder='Your District' className="h-10 outline-none border mt-1 pr-3 rounded px-4 w-full bg-gray-50">
                       <option required className='bg-gray-900 text-white' value="Select District"></option>
                       <option value="Kasaragod">Kasaragod</option>
                       <option value="Kannur">Kannur</option>
@@ -96,15 +95,15 @@ const ID = "qQiiYM7KIuDBrtTuy";
                       <option value="Thiruvananthapuram">Thiruvananthapuram</option>
                     </select>
                   </div>
-                  <div class="md:col-span-5">
+                  <div className="md:col-span-5">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_messege">Messege</label>
-                    <textarea required class="h-20 py-2 capitalize outline-none border mt-1 rounded px-4 w-full bg-gray-50"
+                    <textarea required className="h-20 py-2 capitalize outline-none border mt-1 rounded px-4 w-full bg-gray-50"
                      name="user_message" id="" rows="10" placeholder='Something...'></textarea>
                   </div>
 
-                  <div class="md:col-span-5 text-right">
-                    <div class="inline-flex items-end">
-                      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                  <div className="md:col-span-5 text-right">
+                    <div className="inline-flex items-end">
+                      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
                     </div>
                   </div>
     

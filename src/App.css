@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +6,9 @@
 }
 body{
     font-family: 'rubik';
-    display: inline-block;
+    /* display: inline-block; */
     overflow-x: hidden;
     position: relative;
-    
 }
 body::-webkit-scrollbar {
     width: 3px;

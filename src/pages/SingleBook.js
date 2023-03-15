@@ -16,7 +16,7 @@ const SingleBook = ({ onClose, onRequest }) => {
 		               	<SingleBookProvider>
 							<div className='modal-header h-auto relative flex justify-between p-5 border-b-[1px] border-gray-50'>
 		               		<BookGallery />
-							   <button
+						   <button
 								onClick={onClose}
 								className="px-4 font-bold absolute top-8 right-5 text-white"
 						    	>

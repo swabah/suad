@@ -4,6 +4,7 @@
 }
 #Blinking{
     animation: entry .2s ease;
+    /* color: #000000d5; */
     transition:opacity .1s ease, transform .5s ease;
 }
 @keyframes entry{

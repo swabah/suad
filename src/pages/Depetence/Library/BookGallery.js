@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { FiX } from 'react-icons/fi';
 import SingleBookContext from '../../../Context/SingleBookContext';
 
 const BookGallery = ({onClose}) => {

@@ -7,8 +7,8 @@ import ScrollToTop from "react-scroll-to-top";
 function Layout() {
   return <>
      <Header/>
-     <Outlet/>
      <ScrollToTop smooth height='20' width='20' className='flex items-center justify-center'/>
+     <Outlet/>
      <Footer/>
   </>
 }

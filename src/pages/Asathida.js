@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Asathidacard from './Depetence/Asathidacard'
 import SubHeadings from '../components/SubHeadings'
-import { motion } from 'framer-motion'
 import { AsathidaData } from '../data/AsathidaData'
 
 function Asathida() {
 
   return (
 
-    <div className=' w-full text-[#1c415d] h-full flex flex-col   mt-[60px] md:mt-[77px] lg:mt-[90px] '>
+    <div className=' w-full text-[#1c415d] h-auto flex flex-col  bg-white  '>
       <SubHeadings subheading='Asathidah'/>
-          <div className='w-full space-y-2 md:space-y-5 flex flex-col items-start select-none mt-6 md:mt-9 px-2 md:px-7 lg:px-20 '>
+          <div className='w-full space-y-2 md:space-y-5 flex flex-col items-start select-none mt-6 md:mt-12 px-2 md:px-7 lg:px-20 '>
         			  	<h2  className='text-base md:text-xl uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded border bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
         			  	   <span className='uppercase '>Our Faculty</span> 
         			  	</h2>

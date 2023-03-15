@@ -8,7 +8,7 @@ function Services() {
 
   return (
 
-    <div className='w-full h-auto mt-[60px] md:mt-[77px] lg:mt-[90px]'>
+    <div className='w-full h-auto bg-white '>
         <SubHeadings subheading='Our Services'/>
         
         <div className='w-full h-full flex flex-wrap gap-5 mt-5 py-3 md:py-8 xl:py-14 justify-center items-center   px-2 md:px-7 lg:px-20 '>

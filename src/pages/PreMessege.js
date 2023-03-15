@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 function PreMessege() {
   return (
 
-    <div className='w-full text-[#1c415d] flex flex-col  h-full   mt-[60px] md:mt-[77px] lg:mt-[90px]'>
+    <div className='w-full text-[#1c415d] flex flex-col bg-white h-full   '>
       <SubHeadings subheading="President's Messege"/>
         {/* <div className='pt-16 '>
         <h1 className=' text-4xl font-bold '>President's Messege</h1>

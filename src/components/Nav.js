@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import logo from './ahlussuffalogo.png'
+import logo1 from './ahlussuffalogo1.png'
 import { FaChevronDown, FaMouse } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +11,7 @@ export default function Nav() {
 
   const [fix, setfix] = useState(false);
    const Changecolor = () =>{
-      if (window.scrollY >= 50) {
+      if (window.scrollY >= 1) {
         setfix(true)
       }else (
         setfix(false)
@@ -23,11 +24,17 @@ export default function Nav() {
     }
   return (
     <header>
-      <nav className={`flex justify-between ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#1c415d] drop-shadow-lg transition duration bg-white ' : 'text-[#1c415d] drop-shadow-2xl'} z-30 bg-white bg-opacity-90 fixed top-0 items-center w-full  h-22 py-1.5   px-2 md:px-7 lg:px-20 `} aria-label="Global">
+      <nav className={`flex justify-between ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#1c415d] drop-shadow-lg transition duration py-3.5 h-24 bg-white bg-opacity-90' : 'text-[#fff] drop-shadow-2xl h-32 py-4.5'} z-30 fixed top-0 items-center w-full bg-transparent   px-2 md:px-7 lg:px-20 `} aria-label="Global">
         <div className="flex lg:flex-1">
+          {fix ?
            <Link className='' to='/'>
               <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill' src={logo} alt="Logo" />
            </Link>
+           :
+           <Link className='' to='/'>
+              <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill' src={logo1} alt="Logo" />
+           </Link>
+           }
         </div>
         <div className="flex lg:hidden">
           <button
@@ -204,14 +211,14 @@ export default function Nav() {
          className="fixed inset-0 z-50 " />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 backdrop-blur-lg bg-opacity-70">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <div className="-m-1.5 p-1.5">
               <span className="sr-only">Ahlussuffa Dars</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src={logo}
                 alt=""
               />
-            </a>
+            </div>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
