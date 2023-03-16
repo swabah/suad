@@ -16,7 +16,7 @@ function Homeseven() {
           <LinkTags name='View All'/>
        </Link>
      </div>
-     <div className='mt-3 md:mt-5 w-full h-auto grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-2 gird-rows-auto px-10 md:px-0 items-center justify-center'>
+     <div className='mt-3 md:mt-5 w-full h-auto grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-2 gird-rows-auto px-2 md:px-0 items-center justify-center'>
       {EventData.slice(0,4).map((event)=>(
          <EventsCard imgE={event.imgE} link={event.link} head={event.head} para={event.para}/>
       ))}

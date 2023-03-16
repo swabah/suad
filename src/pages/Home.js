@@ -45,7 +45,7 @@ function Home() {
         return (
           <div key={index}>
             {index===current ?
-            <div className='w-full relative h-[650px] xl:h-screen bg-black'>
+            <div className='w-full relative h-[650px] lg:h-screen bg-black'>
             <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 opacity-30 md:opacity-50 object-cover ' id='slidingImage' alt="" />
               {Contents.map((Content,index) => {
                 if (current === index) {
