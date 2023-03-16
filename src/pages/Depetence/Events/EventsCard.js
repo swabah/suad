@@ -28,15 +28,15 @@ function EventsCard(props) {
 				delay: 0.15,
 			}} className='w-full md:w-56 lg:w-72 xl:w-80 h-auto lg:p-0.5 xl:p-2'>
 
-    <div onClick={showLoginBook}  className="cursor-pointer block rounded-lg p-4 bg-transparent shadow-lg border-2 shadow-indigo-100 w-full h-full">
+    <div onClick={showLoginBook}  className="cursor-pointer block rounded-lg p-2 lg:p-4 bg-transparent shadow-lg border-2 shadow-indigo-100 w-full h-full">
         <img alt="Home" src={props.imgE}  className="w-full h-auto lg:h-44 xl:h-52 drop-shadow-md rounded-md object-cover" />
-        <div className="mt-2 w-full h-full">
+        <div className="mt-1 lg:mt-2 w-full h-full">
           <div>
             <div>
-              <h2 className="text-sm font-bold pt-2 text-[#1c415d] uppercase">{props.head}</h2>
+              <h2 className="text-xs lg:text-sm font-bold pt-1 lg:pt-2 text-[#1c415d] uppercase">{props.head}</h2>
             </div>
             <div>
-              <h2 id='Eventtext' className="select-none py-2 lg:py-0 lg:pb-2 xl:py-2 mt-1.5 font-medium text-xs whitespace-nowrap overflow-y-hidden ">{props.para}</h2>
+              <h2 id='Eventtext' className="select-none py-1 lg:py-2 lg:py-0 lg:pb-2 xl:py-2 mt-0.5 lg:mt-1.5 font-medium text-xs whitespace-nowrap overflow-y-hidden ">{props.para}</h2>
               {/* <a href={props.link} className="font-medium text-xs text-blue-700 mt-0.5 underline underline-offset-1">Read more</a> */}
             </div>
           </div>
