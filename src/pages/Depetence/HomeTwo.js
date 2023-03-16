@@ -2,7 +2,7 @@ import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import dars from '../img/darsHall.jpeg'
 import hey from '../img/hey.png'
-import LinkTags from './Tools/LinkTags'
+import LinkTags from '../../assets/LinkTags'
 
 function HomeTwo() {
   return (

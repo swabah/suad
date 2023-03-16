@@ -4,7 +4,7 @@ import Computerr from '../img/Computerr.png'
 import Library from '../img/Library.png'
 import ArrowrighT from '../img/Arrowright.png'
 import HomeCard from './HomeCard'
-import LinkTags from './Tools/LinkTags'
+import LinkTags from '../../assets/LinkTags'
 
 function HomeThree() {
   return (

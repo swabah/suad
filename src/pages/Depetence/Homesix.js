@@ -2,7 +2,7 @@ import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import links from '../../assets/Links'
 import youtube from '../../assets/Links'
-import LinkTags from './Tools/LinkTags'
+import LinkTags from '../../assets/LinkTags'
 
 function Homesix() {
   return (

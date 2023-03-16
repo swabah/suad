@@ -11,7 +11,7 @@ function Services() {
     <div className='w-full h-auto bg-white '>
         <SubHeadings subheading='Our Services'/>
         
-        <div className='w-full h-full flex flex-wrap gap-5 mt-5 py-3 md:py-8 xl:py-14 justify-center items-center   px-2 md:px-7 lg:px-20 '>
+        <div className='mt-3 md:mt-5 w-full h-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 xl:gap-3 items-center justify-center px-10 md:px-7 lg:px-20  py-8 md:py-16 lg:py-20 '>
           {ServiceCardData.map((content)=>(
             <Servicecards img={content.img} title={content.title} para={content.para}/>
           ))}

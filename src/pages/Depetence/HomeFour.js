@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import LinkTags from './Tools/LinkTags'
+import LinkTags from '../../assets/LinkTags'
 import Servicecards from './Services/Servicecards'
 import img2 from './../img/servise2.jpg'
 import img3 from './../img/servise3.jpg'
@@ -19,7 +19,7 @@ function HomeFour() {
        <LinkTags name='view detiles'/>
        </Link>
      </div>
-     <div className='pt-6 w-full h-auto flex-wrap flex  gap-y-6   items-center justify-between'>
+     <div className='mt-3 md:mt-5 w-full h-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 xl:gap-3 px-10 md:px-0 items-center justify-center'>
       {ServiceCardData.slice(0,4).map((con)=>(
            <Servicecards img={con.img} title={con.title} para={con.para} />
       ))}
