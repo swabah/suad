@@ -23,31 +23,6 @@ export default function Nav() {
    function classNames(...classes) {
      return classes.filter(Boolean).join(' ')
     }
-
-    const buttonRef = useRef(null)
-    const timeoutDuration = 100
-    let timeout
-  
-    const closePopover = () => {
-      return buttonRef.current?.dispatchEvent(
-        new KeyboardEvent("keydown", {
-          key: "Escape",
-          bubbles: true,
-          cancelable: true
-        })
-      )
-    }
-  
-    const onMouseEnter = (open) => {
-      clearTimeout(timeout)
-      if (open) return
-      return buttonRef.current?.click()
-    }
-  
-    const onMouseLeave = (open) => {
-      if (!open) return
-      timeout = setTimeout(() => closePopover(), timeoutDuration)
-    }
   
   return (
     <header>
@@ -83,15 +58,8 @@ export default function Nav() {
             </Popover>
            <Popover 
             className="relative">
-              {({ open }) => {
-             return (
-              <> 
-              <div onMouseLeave={onMouseLeave.bind(null, open)}>
                 <Popover.Button
-                  ref={buttonRef}
-                  onMouseEnter={onMouseEnter.bind(null, open)}
-                  onMouseLeave={onMouseLeave.bind(null, open)}
-                  className={` ${open ? "" : "text-opacity-90"} flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6`}>
+                  className={`flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6`}>
                     Know'us
                   <FaChevronDown className="h-4 w-4 font-light flex-none text-gray-400" aria-hidden="true" />
                 </Popover.Button>
@@ -108,8 +76,6 @@ export default function Nav() {
                   <Popover.Panel
                    className="absolute -left-8 top-full z-10 mt-2 w-[250px] overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
                     <div 
-                      onMouseEnter={onMouseEnter.bind(null, open)}
-                      // onMouseLeave={onMouseLeave.bind(null, open)}
                       className="py-3 rounded">
                         {menuItems.know.map((item)=>(
                            <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
@@ -121,10 +87,6 @@ export default function Nav() {
                     </div>
                   </Popover.Panel>
                  </Transition>
-              </div>
-               </> 
-              )
-              }}
             </Popover>
          <Popover className="relative">
            <Popover.Button className="flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm  hover:text-[#72bf44]   drop-shadow-md font-medium  leading-6">
