@@ -218,31 +218,13 @@ export default function Nav() {
                             as="a"
                             className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
-                            <Link to='/PreMessege'  onClick={() => setDropdownOpen(false)} >
-                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
-                                  <p className='' >President's Messege</p>
+                             {menuItems.know.map((item)=>(
+                              <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
+                                  <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <p className='' >{item.name}</p>
                                 </div>
-                             </Link>
-                             <Link to='/Committee'  onClick={() => setDropdownOpen(false)}>
-                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
-                                  <p className='' >Stundents Union</p>
-                                </div>
-                             </Link>
-                             <Link to='/Asathida'  onClick={() => setDropdownOpen(false)}>
-                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
-                                  <p className='' >Our faculty</p>
-                                </div>
-                             </Link>
-                             <Link to='/Services'  onClick={() => setDropdownOpen(false)}>
-                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
-                                  <p className='' >Our services</p>
-                                </div>
-                             </Link>
-                             <Link to='/library'  onClick={() => setDropdownOpen(false)}>
-                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
-                                  <p className='' >Baithul Hikma</p>
-                                </div>
-                             </Link>
+                               </Link>
+                               ))}
                           </Disclosure.Button>
                       </Disclosure.Panel>
                     </>
@@ -263,16 +245,13 @@ export default function Nav() {
                             as="a"
                             className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
-                            <Link to='/HSprogrammes'  onClick={() => setDropdownOpen(false)}>
-                               <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase drop-shadow-md relative  font-medium">
-                                 <p className='' >HS programmes</p>
-                               </div>
-                            </Link>
-                            <Link to='/BSprogrammes'  onClick={() => setDropdownOpen(false)}>
-                               <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase drop-shadow-md relative  font-medium">
-                                 <p className='' >BS programmes</p>
-                               </div>
-                            </Link>
+                            {menuItems.Programmes.map((item)=>(
+                            <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
+                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                <p className='' >{item.name}</p>
+                              </div>
+                             </Link>
+                             ))}
                           </Disclosure.Button>
                       </Disclosure.Panel>
                     </>
@@ -293,21 +272,13 @@ export default function Nav() {
                             as="a"
                             className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
-                            <Link to='/Event'  onClick={() => setDropdownOpen(false)}>
-                               <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100    drop-shadow-md hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
-                                 <p className='' >Events</p>
-                               </div>
-                            </Link> 
-                            <Link to='/Photos'  onClick={() => setDropdownOpen(false)}>
-                               <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100    drop-shadow-md hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
-                                 <p className='' >Photos</p>
-                               </div>
-                            </Link>
-                            <Link to='/Videos'  onClick={() => setDropdownOpen(false)}>
-                               <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 drop-shadow-md hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
-                                 <p className='' >Videos</p>
-                               </div>
-                            </Link>
+                            {menuItems.Resources.map((item)=>(
+                              <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
+                                  <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <p className='' >{item.name}</p>
+                                </div>
+                               </Link>
+                               ))}
                           </Disclosure.Button>
                       </Disclosure.Panel>
                     </>
@@ -328,16 +299,13 @@ export default function Nav() {
                             as="a"
                             className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
-                             <Link to='/QiuckContact'  onClick={() => setDropdownOpen(false)}>
-                                 <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
-                                   <p className='' >Qiuck Contacts</p>
-                                 </div>
-                              </Link>
-                              <Link to='/Contact'  onClick={() => setDropdownOpen(false)}>
-                                 <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-100 hover:text-[#72bf44] p-1.5 px-4  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
-                                   <p className='' >Contact Form</p>
-                                 </div>
-                              </Link>
+                            {menuItems.ReachUs.map((item)=>(
+                              <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
+                                  <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <p className='' >{item.name}</p>
+                                </div>
+                               </Link>
+                               ))}
                           </Disclosure.Button>
                       </Disclosure.Panel>
                     </>

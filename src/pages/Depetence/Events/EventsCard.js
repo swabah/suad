@@ -4,21 +4,7 @@ import SingleBook from '../../SingleBook';
 import '../Style.css'
 
 function EventsCard(props) {
-   const [showBook, setShowBook] = useState(false);
 
-	function showLoginBook() {
-		if (!showBook) {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.add('overflow-y-hidden');
-			setShowBook(true);
-		} else {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.remove('overflow-y-hidden');
-			setShowBook(false);
-		}
-	}
   return (
     <motion.div initial={{ opacity: 0 }}
 			animate={{ opacity: 1, delay: 1 }}
@@ -28,7 +14,7 @@ function EventsCard(props) {
 				delay: 0.15,
 			}} className='w-full h-auto lg:p-0.5 xl:p-2'>
 
-    <div onClick={showLoginBook}  className="cursor-pointer block rounded-lg p-2 lg:p-4 bg-transparent md:shadow-lg md:border-2 shadow-indigo-100 w-full h-full">
+    <div className="cursor-pointer block rounded-lg p-2 lg:p-4 bg-transparent md:shadow-lg md:border-2 shadow-indigo-100 w-full h-full">
         <img alt="Home" src={props.imgE}  className="w-full h-auto drop-shadow-md md:rounded-md object-cover" />
         <div className="mt-1 lg:mt-2 w-full h-full">
           <div>
@@ -42,13 +28,6 @@ function EventsCard(props) {
           </div>
         </div>
    </div>
-   {showBook ? (
-		<SingleBook
-		    	onClose={showLoginBook}
-		    	onRequest={showLoginBook}
-		  />
-		  ) : null}
-		    {showBook ? showLoginBook : null}
      </motion.div>
   )
 }

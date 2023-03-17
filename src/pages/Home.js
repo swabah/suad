@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import './Depetence/Style.css'
-import { motion } from 'framer-motion';
 import HomeFive from './Depetence/HomeFive';
-import HomeFour from './Depetence/HomeFour';
 import HomeOne from './Depetence/HomeOne';
 import Homeseven from './Depetence/Homeseven';
 import Homesix from './Depetence/Homesix';
@@ -37,16 +35,13 @@ function Home() {
             setCurrent (current === lengthContent -1 ? 0 : current  + 1)
         }, 7000);
   return (
-    <motion.div
-		>
-
     <div className='w-full h-full bg-white'>
        {images.map((slide,index)=>{
         return (
           <div key={index}>
             {index===current ?
             <div className='w-full relative h-[650px] lg:h-screen bg-black'>
-            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 opacity-30 md:opacity-50 object-cover ' id='slidingImage' alt="" />
+            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 opacity-30 md:opacity-40 object-cover ' id='slidingImage' alt="" />
               {Contents.map((Content,index) => {
                 if (current === index) {
                   return (
@@ -66,14 +61,11 @@ function Home() {
        <HomeOne/>
        <HomeTwo/>
        <HOmeThree/>
-       <HomeFour/>
+       {/* <HomeFour/> */}
        <HomeFive/>
        <Homeseven/>
        <Homesix/>
     </div>
-    </motion.div>
-
-
   )
 }
 

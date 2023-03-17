@@ -15,7 +15,7 @@ function PreMessege() {
         </div> */}
             <div className='w-full  flex flex-col items-start select-none  px-2 md:px-7 lg:px-20  mt-7 md:mt-12'>
         		  	<h2  className='text-base md:text-xl uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded border bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
-        		  	   <span className='uppercase '>President's Messege</span> 
+        		  	   <span className='uppercase '>RECTOR'S Messege</span> 
         		  	</h2>
         		</div>
         <div className='w-full h-auto mt-3 md:mt-7 pb-10 md:pb-16 xl:pb-20 text-lg flex flex-col md:flex-row items-center justify-between   px-2 md:px-7 lg:px-20 '>

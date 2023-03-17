@@ -8,7 +8,7 @@ import LinkTags from '../../assets/LinkTags'
 
 function HomeThree() {
   return (
-    <div className='w-full text-[#1c415d] flex flex-col items-center  px-2 md:px-7 lg:px-20  py-7 md:py-12 lg:py-16 bg-white'>
+    <div className='w-full text-[#1c415d] flex flex-col items-center  px-3 md:px-7 lg:px-20  py-7 md:py-12 lg:py-16 bg-white'>
     {/* <h2 className='text-5xl font-bold '>This Helps You Get Ahead Of The Crowd</h2> */}
     <div className='w-full items-start font-light text-gray-700'>
            <h1 className='text-xs md:text-base uppercase'>Our Special <span className='font-bold md:text-lg'>!</span></h1>

@@ -8,13 +8,15 @@ import Contact from './pages/Contact'
 import Library from './pages/Library'
 import Services from './pages/Services'
 import Events from './pages/Events'
-import PreMessege from './pages/PreMessege'
+import RecMessege from './pages/RecMessege'
 import Committee from './pages/Committee'
 import Asathida from './pages/Asathida'
 import QiuckContact from './pages/QiuckContact'
 import Photos from "./pages/Photos";
 import Videos from "./pages/Videos";
 import Layout from "./assets/Layout";
+import BS from "./pages/BS";
+import HS from "./pages/HS";
 
 
 
@@ -27,9 +29,11 @@ function App() {
         <Route index element={<Home/>} />
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/library" element={<Library/>}/>
+        <Route path="/BSprogrammes" element={<BS/>}/>
+        <Route path="/HSprogrammes" element={<HS/>}/>
         <Route path="/Services" element={<Services/>}/>
         <Route path="/Event" element={<Events/>}/>
-        <Route path="/PreMessege" element={<PreMessege/>}/>
+        <Route path="/RecMessege" element={<RecMessege/>}/>
         <Route path="/Committee" element={<Committee/>}/>
         <Route path="/Asathida" element={<Asathida/>}/>
         <Route path="/Photos" element={<Photos/>}/>

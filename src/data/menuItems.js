@@ -1,8 +1,8 @@
 export const menuItems ={
     know:[
         {
-            name : "President's Messege",
-            url : '/PreMessege'
+            name : "RECTOR'S Messege",
+            url : '/RecMessege'
         },
         {
             name : 'Stundents Union',
@@ -11,10 +11,6 @@ export const menuItems ={
         {
             name : 'Our faculty',
             url :'/Asathida'
-        },
-        {
-            name : 'Our services',
-            url :'/Services'
         },
         {
             name : 'Baithul Hikma',
