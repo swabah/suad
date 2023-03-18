@@ -3,7 +3,7 @@ import SubHeadings from '../components/SubHeadings'
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import Location from './Depetence/Contact/Location';
-import { FaAddressBook, FaLocationArrow } from 'react-icons/fa';
+import { FaAddressBook, FaLocationArrow, FaMailBulk, FaMobile, FaMobileAlt } from 'react-icons/fa';
 import { AiOutlineEnvironment} from 'react-icons/ai';
 import img from './img/IMG_2747.JPG'
 
@@ -47,14 +47,23 @@ const ID = "qQiiYM7KIuDBrtTuy";
         		  	</h2>
         	</div>
           <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6 mt-10">
-            <div className="grid gap-4 gap-y-3 text-sm grid-cols-1 xl:grid-cols-3 grid-rows-auto" >
-              <div className="relative space-y-2 bg-red-200 w-full h-[300px] xl:h-full rounded flex flex-col items-start bg-black justify-center ">
-                <img className='absolute inset-0 w-full h-full object-cover rounded brightness-50 opacity-80' src={img} alt="" />
+            <div className="grid gap-7 gap-y-3 text-sm grid-cols-1 xl:grid-cols-3 grid-rows-auto" >
+              <div className="relative  bg-black  space-y-2 w-full h-[300px] xl:h-full rounded flex flex-col items-start justify-center ">
+                <img className='absolute inset-0 w-full h-full object-cover rounded brightness-50 opacity-60' src={img} alt="" />
                   {/* <span className='text-2xl'><FaAddressBook/></span> */}
-                  <div className='z-20 text-white px-5 w-full h-full bg-black bg-opacity-40 text-base text-base flex flex-col items-center '>
-                  <p className='text-base capitalize text-base'>Ahlussuffa Dars, Shuhada Maqam, Thathoor</p>
-                  <a className='cursor-pointer' href="mailto:ahlussuffa.igs@gmail.com">ahlussuffa.igs@gmail.com</a>
-                  <a className='cursor-pointer'  href="tel:+91 8848080044">+91 8848080044</a>
+                  <div className='z-20  w-full h-full text-base text-base space-y-1 flex flex-col items-center justify-center px-2 md:px-6 xl:px-3'>
+                    <div className='flex font-bold text-lg space-x-1 items-center shadow-md w-full bg-white px-2 xl:px-3 rounded-sm bg-opacity-90'>
+                      <AiOutlineEnvironment/>
+                     <p className='capitalize text-xs md:text-base xl:text-sm p-2 font-medium tracking-wide drop-shadow-sm '>Ahlussuffa Dars, Shuhada Maqam, Thathoor</p>
+                    </div>
+                     <div className='flex font-bold text-lg space-x-2 items-center shadow-md w-full bg-white px-2 xl:px-3 rounded-sm bg-opacity-90'>
+                      <FaMailBulk/>
+                     <a className='cursor-pointer text-xs md:text-base xl:text-sm p-2 font-medium tracking-wide drop-shadow-sm ' href="mailto:ahlussuffa.igs@gmail.com">ahlussuffa.igs@gmail.com</a>
+                     </div>
+                     <div className='flex font-bold text-lg space-x-2 items-center shadow-md w-full bg-white px-2 xl:px-3 rounded-sm bg-opacity-90'>
+                      <FaMobileAlt/>
+                     <a className='cursor-pointer text-xs md:text-base xl:text-sm p-2 font-medium tracking-wide drop-shadow-sm '  href="tel:+91 8848080044">+91 8848080044</a>
+                     </div>
                   </div>
                 {/* <p className="font-medium text-lg">Personal Details</p>
                 <p>Please fill out all the fields.</p> */}
