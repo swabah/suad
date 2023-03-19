@@ -8,7 +8,7 @@ import Chat from '../components/Chat';
 function Layout() {
   return <>
      <Header/>
-     <ScrollToTop smooth height='20' width='20' className='flex items-center justify-center z-50'/>
+     <ScrollToTop smooth height='20' width='20'  className=' flex items-center justify-center z-50'/>
       <Chat/>
      <Outlet/>
      <Footer/>
