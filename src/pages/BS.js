@@ -17,7 +17,6 @@ function BS() {
             <p className='md:col-span-3 md:px-3 lg:px-6 xl:px-10 lg:text-lg'>Exhibiting as unrivalled knowledge centre 'Baitul Hikma Library' is the main attraction of Ahlussufa Dars.  contained with a large collection of kithabs and books on different subjects and languages, It has provided with extensive Mutala and reading facilities. It is equipped with advanced systems such as air-conditioning and tele-casting to provide a better learning experience for the students.  Periodicals, student-run magazines, and journal articles are also available here.</p>
         </div>
     </div>
-  
 </div>
   )
 }
