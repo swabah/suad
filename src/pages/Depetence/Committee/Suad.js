@@ -12,13 +12,22 @@ function Suad() {
           </h2>
         </div>
         <div className='w-full py-8 h-auto grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 items-center justify-center gap-5'>
-            <Person img={perdemo} person="Ameen Abdul Qadir" level="Chairman" para="Rest is History"/>
-            <Person img={perdemo} person="Habeeb Mammuthy" level="Convenor" para="Rest is History"/>
-            <Person img={perdemo} person="Thasneem Abubacker" level="Executive" para="Rest is History"/>
-            <Person img={perdemo} person="Zuhair Abdurahman" level="Executive" para="Rest is History"/>
-            <Person img={perdemo} person="Sinan Sidhique" level="Executive" para="Rest is History"/>
-            <Person img={perdemo} person="Dildar Sameer" level="Executive" para="Rest is History"/>
-            <Person img={perdemo} person="Thajudheen Moosa" level="Executive" para="Rest is History"/>
+            <Person img={perdemo} person="Raheem Manzari" level="president" para="Rest is History"/>
+            <Person img={perdemo} person="shahbaz ali ahmed" level="general secretary" para="Rest is History"/>
+            <Person img={perdemo} person="abu thwahir" level="finance secretary" para="Rest is History"/>
+            <Person img={perdemo} person="saleem sameer" level="cabinet secretary" para="Rest is History"/>
+            <Person img={perdemo} person="shahi muhammed" level="dars leader" para="Rest is History"/>
+            <Person img={perdemo} person="swalahudheen" level="malayalam samathi" para="Rest is History"/>
+            <Person img={perdemo} person="muhammed aliyar" level="english department" para="Rest is History"/>
+            <Person img={perdemo} person="unais nizar" level="arabic department" para="Rest is History"/>
+            <Person img={perdemo} person="hijas" level="urdu department" para="Rest is History"/>
+            <Person img={perdemo} person="adhil" level="speakers forum" para="Rest is History"/>
+            <Person img={perdemo} person="ziyad" level="situation alive" para="Rest is History"/>
+            <Person img={perdemo} person="noufal" level="suffathul huffaz" para="Rest is History"/>
+            <Person img={perdemo} person="fazlurahman" level="ssf dawa" para="Rest is History"/>
+            <Person img={perdemo} person="salman chelari" level="bailthul hikma" para="Rest is History"/>
+            <Person img={perdemo} person="shamnad" level="zaviyah" para="Rest is History"/>
+            <Person img={perdemo} person="khubaib" level="media" para="Rest is History"/>
         </div>
       </div>
   )

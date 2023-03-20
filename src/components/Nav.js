@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { menuItems } from '../data/menuItems'
 
 
-export default function Nav() {
+export const Nav = () => {
   const [DropdownOpen, setDropdownOpen] = useState(false)
 
   const [fix, setfix] = useState(false);

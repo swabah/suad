@@ -1,5 +1,5 @@
 import {React, useState} from 'react'
-import Nav from '../../../../Admition.AhlssuffaDars/suadadmition/src/Components/Nav'
+import { Nav } from './Nav'
 
 
 function Header() {
