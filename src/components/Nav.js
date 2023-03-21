@@ -61,7 +61,7 @@ export const Nav = () => {
             className="relative">
                 <Popover.Button
                   className={`flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6`}>
-                    Know'us
+                    Know Us
                   <FaChevronDown className="h-4 w-4 font-light flex-none text-gray-400" aria-hidden="true" />
                 </Popover.Button>
 

@@ -1,6 +1,10 @@
 export const menuItems ={
     know:[
         {
+            name : "Ahlussuffa",
+            url : '/Ahlussuffa'
+        },
+        {
             name : "RECTOR'S Messege",
             url : '/RecMessege'
         },
@@ -15,6 +19,14 @@ export const menuItems ={
         {
             name : 'Baithul Hikma',
             url :'/library'
+        },
+        {
+            name : 'Suffathul huffad',
+            url :'/suffathul Huffad'
+        },
+        {
+            name : 'Suffa Digi Kiosk',
+            url :'/Suffa Digi kiosk'
         },
     ],
     Programmes :[

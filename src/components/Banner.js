@@ -8,7 +8,7 @@ function Banner() {
 
   return (
     <motion.div
-    className={`w-full h-8 py-3 md:py-0 space-y-2 shadow-md md:space-y-0 md:h-10 bg-[#032c4b] flex flex-col md:flex-row items-center justify-center md:justify-between transition duration-300  px-2 md:px-7 lg:px-20 `}
+    className={`w-full h-8 py-3 md:py-0 space-y-2 shadow-md md:space-y-0 md:h-10 flex flex-col md:flex-row items-center justify-center md:justify-between transition duration-300  px-2 md:px-7 lg:px-20 `}
    >
             <div className='flex space-x-1 w-full justify-between md:justify-start items-center h-5 text-sm text-gray-200  font-thin'>
                 <Link className='border-r-2 pr-10 md:pr-1 border-gray-500 hover:border-gray-600 transition hover:text-gray-500'  to='/'  >Home</Link>

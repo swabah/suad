@@ -3,10 +3,11 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import img from '../img/img9.jpeg'
 
 function HomeFive() {
   return (
-   <div  style={{backgroundImage: `url(http://ahlussuffadars.in/assets/images/1.jpg)`}} className='w-full h-auto xl:h-[400px]  bg-center bg-cover bg-fixed '>
+   <div  style={{backgroundImage: `url(${img})`}} className='w-full h-auto xl:h-[400px]  bg-center bg-cover bg-fixed '>
     <div className='w-full h-full flex flex-col justify-center bg-black bg-opacity-80  text-[#ffff]  px-3 md:px-7 lg:px-20  py-10 md:py-12 lg:py-16'>
              <div className='w-full h-auto md:items-center flex flex-col pb-3 md:pb-5 lg:pb-7 opacity-90 space-y-1.5 md:space-y-3'>
               <h1 className='text-sm md:text-xl lg:text-2xl xl:text-3xl font-medium drop-shadow-md'>JOIN THE AHLUSSUFFA FAMILY TODAY</h1>

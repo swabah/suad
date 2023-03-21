@@ -8,6 +8,7 @@ import HOmeThree from './Depetence/HomeThree';
 import HomeTwo from './Depetence/HomeTwo';
 import TextHome from './Depetence/TextHome';
 import homImg1 from './img/IMG_2747.JPG' 
+import HomeFour from './Depetence/HomeFour';
 
 function Home() {
    const images = [
@@ -60,8 +61,8 @@ function Home() {
 
        <HomeOne/>
        <HomeTwo/>
-       <HOmeThree/>
        {/* <HomeFour/> */}
+       <HOmeThree/>
        <HomeFive/>
        <Homeseven/>
        <Homesix/>

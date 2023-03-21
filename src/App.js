@@ -17,6 +17,9 @@ import Videos from "./pages/Videos";
 import Layout from "./assets/Layout";
 import BS from "./pages/BS";
 import HS from "./pages/HS";
+import Huffad from "./pages/Huffad";
+import SuffaDigi from "./pages/SuffaDigi";
+import Ahlussuffa from "./pages/Ahlussuffa";
 
 
 
@@ -32,10 +35,13 @@ function App() {
         <Route path="/BSprogrammes" element={<BS/>}/>
         <Route path="/HSprogrammes" element={<HS/>}/>
         <Route path="/Services" element={<Services/>}/>
+        <Route path="/Ahlussuffa" element={<Ahlussuffa/>}/>
         <Route path="/Event" element={<Events/>}/>
         <Route path="/RecMessege" element={<RecMessege/>}/>
         <Route path="/Committee" element={<Committee/>}/>
         <Route path="/Asathida" element={<Asathida/>}/>
+        <Route path="/suffathul Huffad" element={<Huffad/>}/>
+        <Route path="/Suffa Digi kiosk" element={<SuffaDigi/>}/>
         <Route path="/Photos" element={<Photos/>}/>
         <Route path="/Videos" element={<Videos/>}/>
         <Route path="/QiuckContact" element={<QiuckContact/>}/>
