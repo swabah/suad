@@ -8,7 +8,6 @@ import HOmeThree from './Depetence/HomeThree';
 import HomeTwo from './Depetence/HomeTwo';
 import TextHome from './Depetence/TextHome';
 import homImg1 from './img/IMG_2747.JPG' 
-import HomeFour from './Depetence/HomeFour';
 
 function Home() {
    const images = [
@@ -22,10 +21,8 @@ function Home() {
    const Contents = [
     'Better education for a better world',
     'Explore the world of our graduates',
-    // 'Exceptional people exceptional care',
     'Better education for a better world',
-    // 'Explore the world of our graduates',
-    // 'Exceptional people exceptional care',
+    'Exceptional people exceptional care',
   ];
   const [current,setCurrent]=useState(0)
     const length = images.length

@@ -1,8 +1,7 @@
-import { Fragment, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import logo from './ahlussuffalogo.png'
 import logo1 from './ahlussuffalogo1.png'
-
 import { FaAlignRight, FaChevronCircleDown, FaChevronDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { menuItems } from '../data/menuItems'
@@ -25,10 +24,14 @@ export const Nav = () => {
      return classes.filter(Boolean).join(' ')
     }
   
+    useEffect(() => {
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+
   return (
     <header>
       <nav className={`flex justify-between items-center ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#1c415d] shadow-lg transition duration py-3.5 h-16 md:h-20 lg:h-24 bg-white bg-opacity-90' : 'text-[#fff] h-20 md:h-32 py-4.5 bg-transparent'} z-30 fixed top-0  w-full px-4 md:px-7 lg:px-20 `} aria-label="Global">
-        <div className="flex lg:flex-1">
+        <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="flex lg:flex-1">
           {fix ?
            <Link className='' to='/'>
               <img className='h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 bg-center object-fill drop-shadow-sm' src={logo} alt="Logo" />
@@ -52,7 +55,7 @@ export const Nav = () => {
         <Popover.Group className="hidden lg:flex space-x-4 lg:space-x-9">
            <Popover className="relative">
            <Popover.Button className="flex outline-none text-sm lg:text-base uppercase items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6">
-              <Link to='/'>
+              <Link onClick={() => setDropdownOpen(false)} to='/'>
                  Home
                </Link>
            </Popover.Button>
@@ -79,8 +82,8 @@ export const Nav = () => {
                     <div 
                       className="py-3 rounded">
                         {menuItems.know.map((item)=>(
-                           <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                               <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                           <Link to={item.url}  onClick={() => setDropdownOpen(false)} >
+                               <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                                  <p className='' >{item.name}</p>
                                </div>
                             </Link>
@@ -108,7 +111,7 @@ export const Nav = () => {
                <div className="py-3 rounded">
                 {menuItems.Programmes.map((item)=>(
                <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                   <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                      <p className='' >{item.name}</p>
                    </div>
                 </Link>
@@ -137,7 +140,7 @@ export const Nav = () => {
                <div className="py-3 rounded">
                {menuItems.Resources.map((item)=>(
                <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                   <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                      <p className='' >{item.name}</p>
                    </div>
                 </Link>
@@ -165,7 +168,7 @@ export const Nav = () => {
                <div className="py-3 rounded">
                 {menuItems.ReachUs.map((item)=>(
                <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                   <div  className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                      <p className='' >{item.name}</p>
                    </div>
                 </Link>
@@ -184,9 +187,10 @@ export const Nav = () => {
          className="fixed inset-0 z-50 " />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 backdrop-blur-lg bg-opacity-70">
           <div className="flex items-center justify-between">
-            <div className="-m-1.5 p-1.5">
+            <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="-m-1.5 p-1.5">
               <span className="sr-only">Ahlussuffa Dars</span>
               <img
+                onClick={() => setDropdownOpen(false)}
                 className="h-10 w-auto md:hidden"
                 src={logo}
                 alt=""
@@ -221,7 +225,7 @@ export const Nav = () => {
                           >
                              {menuItems.know.map((item)=>(
                               <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                  <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                   <p className='' >{item.name}</p>
                                 </div>
                                </Link>
@@ -248,7 +252,7 @@ export const Nav = () => {
                           >
                             {menuItems.Programmes.map((item)=>(
                             <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                 <p className='' >{item.name}</p>
                               </div>
                              </Link>
@@ -275,7 +279,7 @@ export const Nav = () => {
                           >
                             {menuItems.Resources.map((item)=>(
                               <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                  <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                   <p className='' >{item.name}</p>
                                 </div>
                                </Link>
@@ -302,7 +306,7 @@ export const Nav = () => {
                           >
                             {menuItems.ReachUs.map((item)=>(
                               <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                  <div  className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                   <p className='' >{item.name}</p>
                                 </div>
                                </Link>

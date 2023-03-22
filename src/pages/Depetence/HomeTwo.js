@@ -14,7 +14,7 @@ function HomeTwo() {
     </div>
     <div className='w-full flex items-center  pt-1 md:pb-2 justify-between'>
       <h2 className='text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold'>Welcome to Ahlussuffa</h2>
-      <LinkTags name='view details'/>
+      <LinkTags name='Read More' to='/ahlussuffa'/>
     </div>
     <div className='w-full'>
       {/* <HomeCard/> */}

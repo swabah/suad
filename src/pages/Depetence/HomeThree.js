@@ -15,7 +15,7 @@ function HomeThree() {
         </div>
          <div className='w-full flex items-start md:items-center  pt-1 md:pt-3 pb-2 justify-between'>
            <h2 className='text-lg md:text-2xl lg:text-3xl xl:text-4xl  font-bold'>This Helps You <br className='md:hidden'/> Get Ahead Of The Crowd</h2>
-           <LinkTags name='view detiles'/>
+           {/* <LinkTags name='view detiles'/> */}
          </div>
       <div className='pt-5 md:pt-10 lg:pt-16 w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-y-5 lg:gap-y-0 md:gap-x-5 items-center justify-between'>
           <HomeCard arrow={ArrowrighT} img={Teacher} title="Highly Qualified Asathida" para="Under the great visionary Usthad Arshad Nurani Kamil Saquafi, Ahlussuffa conquering the world with it's potential products to make a second islamic golden age." />

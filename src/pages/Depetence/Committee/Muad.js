@@ -1,6 +1,7 @@
 import React from 'react'
 import Person from './Person'
 import perdemo from './persondemo.png'
+import Ameen from '../../img/Committe/Ameen.jfif'
 
 function Muad() {
   return (
@@ -12,7 +13,7 @@ function Muad() {
           </h2>
         </div>
         <div className='w-full py-8 h-auto grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 items-center justify-center gap-5'>
-            <Person img={perdemo} person="Ameen Abdul Qadir" level="Chairman" para="Rest is History"/>
+            <Person img={Ameen} person="Ameen Abdul Qadir" level="Chairman" para="Rest is History"/>
             <Person img={perdemo} person="Habeeb Mammutty" level="Convenor" para="Rest is History"/>
             <Person img={perdemo} person="Thasneem Abubacker" level="Executive" para="Rest is History"/>
             <Person img={perdemo} person="Zuhair Abdurahman" level="Executive" para="Rest is History"/>
