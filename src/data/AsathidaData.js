@@ -8,22 +8,22 @@ import aliusthad from '../pages/img/Aliusthad.jpg'
 export const AsathidaData = [
 	{
 		id: 1,
-		name: 'Sayyid Ubaid Noorani Valappattanam',
+		name: 'Sayyid Ubaid Nurani Valappattanam',
 		img: thangal,
 	},
 	{
 		id: 2,
-		name: 'Muhammed Arshad Noorani Kamil Saquafi',
+		name: 'Muhammed Arshad Nurani Kamil Saquafi',
 		img: arshadusthad,
 	},
 	{
 		id: 3,
-		name: 'Muhammedali Noorani Saquafi',
+		name: 'Muhammed ali Nurani Saquafi',
 		img: aliusthad,
 	},
 	{
 		id: 4,
-		name: 'Swalahudheen Noorani Saquafi',
+		name: 'Swalahudheen Nurani Saquafi',
 		img: salahusthad,
 	},
 ];

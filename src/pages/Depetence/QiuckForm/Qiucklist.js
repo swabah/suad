@@ -18,10 +18,10 @@ function Qiucklist() {
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-100 border-t border-gray-100">
-          <QiuckPerson status='Al usthad' img={person1} name='Usthad Arshad Noorani Assaqafi' email='person@gmail.com' number='+91 9746431108'/>
-          <QiuckPerson status='usthad' img={person2} name='Muhammed Ali noorani' email='person@gmail.com' number='+91 9961159173'/>
+          <QiuckPerson status='Al usthad' img={person1} name='Usthad Arshad Nurani Assaqafi' email='person@gmail.com' number='+91 9746431108'/>
+          <QiuckPerson status='usthad' img={person2} name='Muhammed Ali Nurani' email='person@gmail.com' number='+91 9961159173'/>
           <QiuckPerson status='usthad' img={person3} name='Shafeeq Manlari Assaqafi' email='person@gmail.com' number='+91 7592897156'/>
-          <QiuckPerson status='usthad' img={person4} name='Salahudheen Noorani' email='person@gmail.com' number='+91 85940 25204'/>
+          <QiuckPerson status='usthad' img={person4} name='Salahudheen Nurani' email='person@gmail.com' number='+91 85940 25204'/>
           <QiuckPerson status='President' img={''} name='~𝐇𝐚𝐟𝐞𝐳 𝐅𝐚𝐫𝐢𝐳 𝐇𝐮𝐳𝐚𝐢𝐧' email='person@gmail.com' number='+91 7559901251'/>
           <QiuckPerson status='President' img={''} name='~Sabith' email='person@gmail.com' number='+91 7356654044'/>
           <QiuckPerson status='President' img={''} name='~Suhailmuhammed' email='person@gmail.com' number='+91 8156962394'/>

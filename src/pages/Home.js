@@ -15,10 +15,11 @@ function Home() {
      "http://ahlussuffadars.in/assets/images/4.jpg",
     "http://ahlussuffadars.in/assets/images/2.jpg",
     "http://ahlussuffadars.in/assets/images/3.jpg",
-    // "http://ahlussuffadars.in/assets/images/g1.jpg",
+    "http://ahlussuffadars.in/assets/images/g1.jpg",
     // "http://ahlussuffadars.in/assets/images/1.jpg"
   ];
    const Contents = [
+    'Experience Ahlussuffa',
     'Better education for a better world',
     'Explore the world of our graduates',
     'Better education for a better world',
