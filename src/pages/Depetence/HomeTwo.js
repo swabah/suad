@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom'
 function HomeTwo() {
   return (
     <div className='w-full space-y-3 text-[#1c415d] h-auto bg-gray-100  px-3 md:px-7 lg:px-20  py-7 md:p-12 lg:py-16 xl:py-20 '>
-    <div className='w-full text-lg font-bold items-start font-light text-[#1c415d]'>
-      {/* <h1>Hey...</h1> */}
+    {/* <div className='w-full text-lg font-bold items-start font-light text-[#1c415d]'>
+      <h1>Hey...</h1>
       <img className='w-9 md:w-14 lg:w-16' src={hey} alt="" />
-    </div>
-    <div className='w-full flex items-center  pt-1 md:pb-2 justify-between'>
+    </div> */}
+    <div className='w-full flex items-center  pt-1 md:pb-2 justify-start'>
       <h2 className='text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold'>Welcome to Ahlussuffa</h2>
-      <LinkTags name='Read More' to='/ahlussuffa'/>
+      {/* <LinkTags name='Read More' to='/ahlussuffa'/> */}
     </div>
     <div className='w-full'>
       {/* <HomeCard/> */}

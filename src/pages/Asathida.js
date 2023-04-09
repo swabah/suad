@@ -8,8 +8,8 @@ function Asathida() {
   return (
 
     <div className=' w-full text-[#1c415d] h-auto flex flex-col  bg-white  '>
-      <SubHeadings subheading='Asathidah'/>
-          <div className='w-full space-y-2 md:space-y-5 flex flex-col items-start select-none mt-6 md:mt-12 px-2 md:px-7 lg:px-20 '>
+      <SubHeadings subheading='Our Faculty'/>
+          <div className='w-full space-y-2 md:space-y-5 hidden  md:flex flex-col items-start select-none mt-6 md:mt-12 px-2 md:px-7 lg:px-20 '>
         			  	<h2  className='text-base md:text-xl uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded border bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
         			  	   <span className='uppercase '>Our Faculty</span> 
         			  	</h2>

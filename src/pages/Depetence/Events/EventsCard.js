@@ -14,8 +14,8 @@ function EventsCard(props) {
 				delay: 0.15,
 			}} className='w-full h-auto lg:p-0.5 xl:p-2'>
 
-    <div className="cursor-pointer block rounded-lg p-2 lg:p-4 bg-transparent md:shadow-lg md:border-2 shadow-indigo-100 w-full h-full">
-        <img alt="Home" src={props.imgE}  className="w-full h-auto drop-shadow-md md:rounded-md object-cover" />
+    <div className="cursor-pointer block rounded-lg p-2 bg-transparent shadow-indigo-100 w-full h-full">
+        <img alt="Home" src={props.imgE}  className="w-full h-auto drop-shadow-md object-cover" />
         <div className="mt-1 lg:mt-2 w-full h-full">
           <div>
             <div>

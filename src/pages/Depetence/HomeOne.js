@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCountUp } from 'react-countup';
+import Chat from '../../assets/Chat';
 
 function HomeOne() {
   	useCountUp({ ref: '1', end: 6, duration: 7 });
@@ -8,6 +9,7 @@ function HomeOne() {
 	useCountUp({ ref: '4', end: 20, duration: 7 });
   return (
     <div className='w-full mt-5 md:mt-16 bg-white py-7 md:py-12 lg:py-14 h-auto  px-2 md:px-7 lg:px-20 '>
+     <Chat/>
       <div className='w-full h-full grid grid-cols-2 gap-y-7 md:grid-cols-4 text-[#35566f] items-center justify-center '>
         <Status count={<span id='1'/>} measurement='+' name='ASATHIDA'/>
         <Status count={<span id='2'/>} measurement='+' name='STUDENTS'/>

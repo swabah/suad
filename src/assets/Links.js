@@ -1,4 +1,7 @@
  const links = {
+        suadadmition:  {
+            url : 'https://suad-admission.vercel.app/'
+        },
         youtube:  {
             url : 'https://www.youtube.com/channel/UCQIfqlPgjM1XpYFNp8cZ6LA?app=desktop'
         },

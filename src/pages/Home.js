@@ -60,7 +60,7 @@ function Home() {
        <HomeOne/>
        <HomeTwo/>
        {/* <HomeFour/> */}
-       <HOmeThree/>
+       {/* <HOmeThree/> */}
        <HomeFive/>
        <Homeseven/>
        <Homesix/>

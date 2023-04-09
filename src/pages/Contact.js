@@ -38,15 +38,15 @@ const ID = "qQiiYM7KIuDBrtTuy";
   return (
 
     <div className=" bg-white flex flex-col items-center justify-center ">
-      <SubHeadings subheading='Contact Form'/>
-      <div className="mt-8 text-[#1c415d] w-full mx-auto  px-2 md:px-7 lg:px-20 ">
+      <SubHeadings subheading='Get in Touch'/>
+      <div className="mt-8 text-[#1c415d] w-full mx-auto  px-2 md:px-7 lg:px-20  py-10">
         <div>
-          <div className='w-full  flex flex-col items-start select-none '>
+          <div className='w-full  hidden flex-col items-start select-none '>
         		  	<h2  className='text-base md:text-lg uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
         		  	   <span className='uppercase '>Get in Touch</span> 
         		  	</h2>
         	</div>
-          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6 mt-10">
+          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
             <div className="grid gap-7 gap-y-3 text-sm grid-cols-1 xl:grid-cols-3 grid-rows-auto" >
               <div className="relative  bg-black  space-y-2 w-full h-[300px] xl:h-full rounded flex flex-col items-start justify-center ">
                 <img className='absolute inset-0 w-full h-full object-cover rounded brightness-50 opacity-60' src={img} alt="" />
@@ -80,42 +80,10 @@ const ID = "qQiiYM7KIuDBrtTuy";
                     <input required type="text" name="user_email" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
                       placeholder="Example.io@gmail.com" />
                   </div>
-    
-    
-                  {/* <div className="md:col-span-3">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_number">Mobile Number</label>
-                    <input required type="text" name="user_number" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50 "
-                      placeholder="+91 0000000000"/>
-                  </div> */}
-                  {/* <div className="md:col-span-2">
-                    <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_birthday">Date of Birth</label>
-                    <input required type="date" name="user_birthday" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50
-                    " />
-                  </div> */}
                   <div className="md:col-span-5">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_subject">Subject</label>
                     <input required type="text"  placeholder='Your Subject' name="user_subject" className="h-10 outline-none border mt-1 rounded px-4 w-full bg-gray-50" />
                   </div>
-                  {/* <div className="md:col-span-2">
-                    <label  className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_distric">District</label>
-                    <select required name="user_distric" placeholder='Your District' className="h-10 outline-none border mt-1 pr-3 rounded px-4 w-full bg-gray-50">
-                      <option required className='bg-gray-900 text-white' value="Select District"></option>
-                      <option value="Kasaragod">Kasaragod</option>
-                      <option value="Kannur">Kannur</option>
-                      <option value="Wayanad">Wayanad</option>
-                      <option value="Kozhikode">Kozhikode</option>
-                      <option value="Malappuram">Malappuram</option>
-                      <option value="Palakkad">Palakkad</option>
-                      <option value="Thrissur">Thrissur</option>
-                      <option value="Ernakulam">Ernakulam</option>
-                      <option value="Idukki">Idukki</option>
-                      <option value="Kottayam">Kottayam</option>
-                      <option value="Alappuzha">Alappuzha</option>
-                      <option value="Pathanamthitta">Pathanamthitta</option>
-                      <option value="Kollam">Kollam</option>
-                      <option value="Thiruvananthapuram">Thiruvananthapuram</option>
-                    </select>
-                  </div> */}
                   <div className="md:col-span-5">
                     <label className="after:content-['*'] after:ml-0.5 after:text-red-500" for="user_messege">Messege</label>
                     <textarea required className="h-20 py-2 capitalize outline-none border mt-1 rounded px-4 w-full bg-gray-50"

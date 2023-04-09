@@ -13,7 +13,7 @@ function Homeseven() {
      <div className='w-full flex items-center md:pt-1  pb-2 justify-between'>
        <h2 className='text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold'>Program & Occasions</h2>
        <Link to='/Event'>
-          <LinkTags name='View All'/>
+          <LinkTags name='View All' to='/event'/>
        </Link>
      </div>
      <div className='mt-3 md:mt-5 w-full h-auto grid grid-cols-2 md:grid-cols-4  md:gap-3 gird-rows-auto  items-center justify-center'>
