@@ -1,16 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SubHeadings from '../components/SubHeadings'
 import {Tab, TabList, TabPanel, Tabs} from 'react-tabs'
 import PhotosItem from './Depetence/Gallery/PhotosItem'
 import { GallaryData } from '../data/GallaryData'
 import '../pages/Depetence/Style.css'
+import { getDownloadURL, listAll, ref } from 'firebase/storage'
+import { storage } from '../firebase/firebase-config'
 
 function Photos() {
+  const [imageUrls, setImageUrls] = useState([]);
+
+  console.log(imageUrls);
+
+  const imagesListRef = ref(storage, "SuffaMehfil2k22dec/");
+
+  useEffect(() => {
+    listAll(imagesListRef).then((response) => {
+      response.items.forEach((item) => {
+        getDownloadURL(item).then((url) => {
+          setImageUrls((prev) => [...prev, url]);
+        });
+      });
+    });
+  }, []);
+
   return (
     <div className='w-full h-auto bg-white  '>
       <SubHeadings subheading='Photos'/>
       <div className='w-full text-[#1c415d] h-full  px-2 md:px-7 lg:px-20  mt-12'>
         <div className=' rounded w-full h-full p-2 md:p-3 lg:p-5'>
+           {imageUrls.map((url) => {
+            })}
             <Tabs className='w-full h-full mt-9 rounded-md inner-shadow-lg '>
                <TabList id='Eventtext' className=' flex  w-full bg-white h-full border-b overflow-y-hidden '>
                  <Tab className='relative flex flex-row w-auto items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-b-2 md:border-b-4 border-r border-transparent hover:border-[#00ab4e] px-2 md:px-2'>
@@ -24,6 +44,18 @@ function Photos() {
                      <span class="ml-1 pr-2 text-xs md:text-sm tracking-wide truncate">Suffa Mehfil</span>
                      <span class=" px-0.5 md:px-2 py-0.5 ml-auto truncate text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">Dec 2K22</span>
                  </Tab>
+                 {/* <Tab className='relative flex flex-row w-auto items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-b-2 md:border-b-4 border-r border-transparent hover:border-[#00ab4e] px-2 md:px-2'>
+                     <span class="ml-1 pr-2 text-xs md:text-sm tracking-wide truncate">Suffa Mehfil</span>
+                     <span class=" px-0.5 md:px-2 py-0.5 ml-auto truncate text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">Jan 2K22</span>
+                 </Tab>
+                 <Tab className='relative flex flex-row w-auto items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-b-2 md:border-b-4 border-r border-transparent hover:border-[#00ab4e] px-2 md:px-2'>
+                     <span class="ml-1 pr-2 text-xs md:text-sm tracking-wide truncate">Suffa Mehfil</span>
+                     <span class=" px-0.5 md:px-2 py-0.5 ml-auto truncate text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">2K21</span>
+                 </Tab>
+                 <Tab className='relative flex flex-row w-auto items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-b-2 md:border-b-4 border-r border-transparent hover:border-[#00ab4e] px-2 md:px-2'>
+                     <span class="ml-1 pr-2 text-xs md:text-sm tracking-wide truncate">sweetrabeeh</span>
+                     <span class=" px-0.5 md:px-2 py-0.5 ml-auto truncate text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">2K22</span>
+                 </Tab> */}
                </TabList>
                  <TabPanel className='w-full h-full pt-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-auto items-center gap-1 md:gap-3'>
                      {GallaryData.DarsGroundPhoto.map((imgdata)=>(
@@ -31,11 +63,15 @@ function Photos() {
                      ))}
                  </TabPanel>
                  <TabPanel className='w-full h-full pt-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-auto items-center gap-1 md:gap-3'>
+                      {/* {imageUrls.map((url,index) => {
+                        return <PhotosItem img={url} id={index} />
+                     })} */}
                      {GallaryData.SuffaMehfil2k22Des.map((imgdata)=>(
                          <PhotosItem img={imgdata.img} id={imgdata.id} />
                      ))}
                  </TabPanel>
             </Tabs>
+
 
         </div> 
       </div>

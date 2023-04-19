@@ -8,14 +8,22 @@ import HOmeThree from './Depetence/HomeThree';
 import HomeTwo from './Depetence/HomeTwo';
 import TextHome from './Depetence/TextHome';
 import homImg1 from './img/IMG_2747.JPG' 
+import homImg2 from './img/1.jpg' 
+import homImg3 from './img/2.jpg' 
+import homImg4 from './img/3.jpg' 
+import homImg5 from './img/4.jpg' 
 
 function Home() {
    const images = [
      homImg1,
-     "http://ahlussuffadars.in/assets/images/4.jpg",
-    "http://ahlussuffadars.in/assets/images/2.jpg",
-    "http://ahlussuffadars.in/assets/images/3.jpg",
-    "http://ahlussuffadars.in/assets/images/g1.jpg",
+     homImg2,
+     homImg3,
+     homImg4,
+     homImg5,
+    //  "http://ahlussuffadars.in/assets/images/4.jpg",
+    // "http://ahlussuffadars.in/assets/images/2.jpg",
+    // "http://ahlussuffadars.in/assets/images/3.jpg",
+    // "http://ahlussuffadars.in/assets/images/g1.jpg",
     // "http://ahlussuffadars.in/assets/images/1.jpg"
   ];
    const Contents = [
@@ -39,13 +47,13 @@ function Home() {
         return (
           <div key={index}>
             {index===current ?
-            <div className='w-full relative h-[650px] lg:h-screen bg-black'>
-            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 opacity-30 md:opacity-40 object-cover ' id='slidingImage' alt="" />
+            <div className='w-full relative h-screen bg-black'>
+            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 opacity-50 md:opacity-70 object-cover ' id='slidingImage' alt="" />
               {Contents.map((Content,index) => {
                 if (current === index) {
                   return (
                     <div className="absolute top-1/2 flex items-center justify-center w-full h-auto ">
-                      <TextHome con={Content} />
+                      <TextHome  con={Content} />
                    </div> 
                   )
                 }

@@ -4,10 +4,11 @@ import person1 from './PersonImg/arshadusthad.jpg'
 import person2 from './PersonImg/Aliusthad.jpg'
 import person3 from './PersonImg/shafeequsthad.jpg'
 import person4 from './PersonImg/salahusthad.jpg'
+import '../../Depetence/Style.css'
 
 function Qiucklist() {
   return (
-    <div className="overflow-y-hidden md:rounded-lg border border-gray-200 shadow-md my-16 md:my-24">
+    <div  id='scrollshade' className="overflow-y-hidden md:rounded-lg border border-gray-200 shadow-md my-16 md:my-24">
       <table className="w-full border-collapse  bg-white text-left text-sm text-gray-500">
         <thead className="bg-gray-50">
           <tr>

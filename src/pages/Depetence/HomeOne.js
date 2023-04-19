@@ -27,8 +27,8 @@ export default HomeOne
 function Status(props) {
   return (
     <div className='flex flex-col justify-center w-full items-center space-y-3 '>
-        <h2 className='font-bold text-center text-4xl md:text-5xl lg:text-6xl flex items-center'>{props.count}{props.measurement}</h2>
-        <p className='font-light text-gary-700 text-center  lg:text-lg tracking-tight '>{props.name}</p>
+        <h2 className='font-semibold text-center text-4xl md:text-5xl lg:text-6xl flex items-center'>{props.count}{props.measurement}</h2>
+        <p className='font-normal text-gary-700 text-center  lg:text-lg tracking-tight '>{props.name}</p>
     </div>
   )
 }
