@@ -1,4 +1,61 @@
-// SuffaMehfil2k22dec2k22Des importing
+
+// SweetRabeeh importing
+import Rabeeh1 from '../pages/img/SweetRabeeh/1.jpg'
+import Rabeeh2 from '../pages/img/SweetRabeeh/2.jpg'
+import Rabeeh3 from '../pages/img/SweetRabeeh/3.jpg'
+import Rabeeh4 from '../pages/img/SweetRabeeh/4.jpg'
+import Rabeeh5 from '../pages/img/SweetRabeeh/5.jpg'
+import Rabeeh6 from '../pages/img/SweetRabeeh/6.jpg'
+import Rabeeh7 from '../pages/img/SweetRabeeh/7.jpg'
+import Rabeeh8 from '../pages/img/SweetRabeeh/8.jpg'
+import Rabeeh9 from '../pages/img/SweetRabeeh/9.jpg'
+import Rabeeh10 from '../pages/img/SweetRabeeh/10.jpg'
+import Rabeeh11 from '../pages/img/SweetRabeeh/11.jpg'
+import Rabeeh12 from '../pages/img/SweetRabeeh/12.jpg'
+import Rabeeh13 from '../pages/img/SweetRabeeh/13.jpg'
+import Rabeeh14 from '../pages/img/SweetRabeeh/14.jpg'
+import Rabeeh15 from '../pages/img/SweetRabeeh/15.jpg'
+import Rabeeh16 from '../pages/img/SweetRabeeh/16.jpg'
+import Rabeeh17 from '../pages/img/SweetRabeeh/17.jpg'
+import Rabeeh18 from '../pages/img/SweetRabeeh/18.jpg'
+import Rabeeh19 from '../pages/img/SweetRabeeh/19.jpg'
+import Rabeeh20 from '../pages/img/SweetRabeeh/20.jpg'
+import Rabeeh21 from '../pages/img/SweetRabeeh/21.jpg'
+import Rabeeh22 from '../pages/img/SweetRabeeh/22.jpg'
+import Rabeeh23 from '../pages/img/SweetRabeeh/23.jpg'
+import Rabeeh24 from '../pages/img/SweetRabeeh/24.jpg'
+import Rabeeh25 from '../pages/img/SweetRabeeh/25.jpg'
+import Rabeeh26 from '../pages/img/SweetRabeeh/26.jpg'
+
+// SuffaMehfil2k21 importing
+import mehfil1 from '../pages/img/SuffaMehfil2k21/1.jpg'
+import mehfil2 from '../pages/img/SuffaMehfil2k21/2.jpg'
+import mehfil3 from '../pages/img/SuffaMehfil2k21/3.jpg'
+import mehfil4 from '../pages/img/SuffaMehfil2k21/4.jpg'
+import mehfil5 from '../pages/img/SuffaMehfil2k21/5.jpg'
+import mehfil6 from '../pages/img/SuffaMehfil2k21/6.jpg'
+import mehfil7 from '../pages/img/SuffaMehfil2k21/7.jpg'
+import mehfil8 from '../pages/img/SuffaMehfil2k21/8.jpg'
+import mehfil9 from '../pages/img/SuffaMehfil2k21/9.jpg'
+import mehfil10 from '../pages/img/SuffaMehfil2k21/10.jpg'
+import mehfil11 from '../pages/img/SuffaMehfil2k21/11.jpg'
+import mehfil12 from '../pages/img/SuffaMehfil2k21/12.jpg'
+import mehfil13 from '../pages/img/SuffaMehfil2k21/13.jpg'
+import mehfil14 from '../pages/img/SuffaMehfil2k21/14.jpg'
+
+// SuffaMehfil2k22Jan importing
+import Jan1 from '../pages/img/SuffaMehfil2k22Jan/1.jpg'
+import Jan2 from '../pages/img/SuffaMehfil2k22Jan/2.jpg'
+import Jan3 from '../pages/img/SuffaMehfil2k22Jan/3.jpg'
+import Jan4 from '../pages/img/SuffaMehfil2k22Jan/4.jpg'
+import Jan5 from '../pages/img/SuffaMehfil2k22Jan/5.jpg'
+import Jan6 from '../pages/img/SuffaMehfil2k22Jan/6.jpg'
+import Jan7 from '../pages/img/SuffaMehfil2k22Jan/7.jpg'
+import Jan8 from '../pages/img/SuffaMehfil2k22Jan/8.jpg'
+import Jan9 from '../pages/img/SuffaMehfil2k22Jan/9.jpg'
+import Jan10 from '../pages/img/SuffaMehfil2k22Jan/10.jpg'
+
+// SuffaMehfil2k22Des importing
 import Des1 from '../pages/img/SuffaMehfil2k22dec/IMG_5506.jpg'
 import Des2 from '../pages/img/SuffaMehfil2k22dec/IMG_5521.jpg'
 import Des3 from '../pages/img/SuffaMehfil2k22dec/IMG_5526.jpg'
@@ -141,6 +198,212 @@ export const GallaryData={
         {
             img: Des22,
             id:'22'
+        },
+    ],
+    SuffaMehfil2k22Jan :[
+        {
+            img: Jan1,
+            id:'01'
+        },
+        {
+            img: Jan2,
+            id:'02'
+        },
+        {
+            img: Jan3,
+            id:'03'
+        },
+        {
+            img: Jan4,
+            id:'04'
+        },
+        {
+            img: Jan5,
+            id:'05'
+        },
+        {
+            img: Jan6,
+            id:'06'
+        },
+        {
+            img: Jan7,
+            id:'07'
+        },
+        {
+            img: Jan8,
+            id:'08'
+        },
+        {
+            img: Jan9,
+            id:'09'
+        },
+        {
+            img: Jan10,
+            id:'10'
+        },
+    ],
+    SuffaMehfil2k21 :[
+        {
+            img: mehfil1,
+            id:'01'
+        },
+        {
+            img: mehfil2,
+            id:'02'
+        },
+        {
+            img: mehfil3,
+            id:'03'
+        },
+        {
+            img: mehfil4,
+            id:'04'
+        },
+        {
+            img: mehfil5,
+            id:'05'
+        },
+        {
+            img: mehfil6,
+            id:'06'
+        },
+        {
+            img: mehfil7,
+            id:'07'
+        },
+        {
+            img: mehfil8,
+            id:'08'
+        },
+        {
+            img: mehfil9,
+            id:'09'
+        },
+        {
+            img: mehfil10,
+            id:'10'
+        },
+        {
+            img: mehfil11,
+            id:'10'
+        },
+        {
+            img: mehfil12,
+            id:'10'
+        },
+        {
+            img: mehfil13,
+            id:'10'
+        },
+        {
+            img: mehfil14,
+            id:'10'
+        },
+    ],
+    SweetRabeeh :[
+        {
+            img: Rabeeh1,
+            id:'01'
+        },
+        {
+            img: Rabeeh2,
+            id:'02'
+        },
+        {
+            img: Rabeeh3,
+            id:'03'
+        },
+        {
+            img: Rabeeh4,
+            id:'04'
+        },
+        {
+            img: Rabeeh5,
+            id:'05'
+        },
+        {
+            img: Rabeeh6,
+            id:'06'
+        },
+        {
+            img: Rabeeh7,
+            id:'07'
+        },
+        {
+            img: Rabeeh8,
+            id:'08'
+        },
+        {
+            img: Rabeeh9,
+            id:'09'
+        },
+        {
+            img: Rabeeh10,
+            id:'10'
+        },
+        {
+            img: Rabeeh11,
+            id:'10'
+        },
+        {
+            img: Rabeeh12,
+            id:'10'
+        },
+        {
+            img: Rabeeh13,
+            id:'10'
+        },
+        {
+            img: Rabeeh14,
+            id:'10'
+        },
+        {
+            img: Rabeeh15,
+            id:'10'
+        },
+        {
+            img: Rabeeh16,
+            id:'10'
+        },
+        {
+            img: Rabeeh17,
+            id:'10'
+        },
+        {
+            img: Rabeeh18,
+            id:'10'
+        },
+        {
+            img: Rabeeh19,
+            id:'10'
+        },
+        {
+            img: Rabeeh20,
+            id:'10'
+        },
+        {
+            img: Rabeeh21,
+            id:'10'
+        },
+        {
+            img: Rabeeh22,
+            id:'10'
+        },
+        {
+            img: Rabeeh23,
+            id:'10'
+        },
+        {
+            img: Rabeeh24,
+            id:'10'
+        },
+        {
+            img: Rabeeh25,
+            id:'10'
+        },
+        {
+            img: Rabeeh26,
+            id:'10'
         },
     ],
     DarsGroundPhoto :[
