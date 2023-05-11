@@ -16,6 +16,7 @@ function Location() {
         style={{ border: "0" }}
         allowfullscreen=""
         loading="lazy"
+        title='Loading'
       ></iframe>
     </div>
   </div>

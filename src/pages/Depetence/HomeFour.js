@@ -1,8 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import LinkTags from '../../assets/LinkTags'
-import Servicecards from './Services/Servicecards'
-import { ServiceCardData } from '../../data/ServiceCardData'
 
 function HomeFour() {
   const data =[
@@ -23,8 +19,6 @@ function HomeFour() {
     },
   ]
   
-    const img = 'https://learnsql.com/blog/unique-vs-distinct/unique-vs-distinct.png' 
-
   return (
     <div   className='bg-fixed bg-cover bg-brightness-50 bg-no-repeat w-full h-full'>
      <div className='w-full text-[#1c415d] h-full   bg-opacity-60 bg-white  py-10 md:py-12 lg:py-16 xl:py-20 '>

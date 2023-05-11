@@ -20,7 +20,10 @@ import HS from "./pages/HS";
 import Huffad from "./pages/Huffad";
 import SuffaDigi from "./pages/SuffaDigi";
 import Ahlussuffa from "./pages/Ahlussuffa";
-import { AdmitionResult } from "./assets/AdmitionAlert"
+
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 
 

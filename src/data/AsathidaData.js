@@ -23,7 +23,12 @@ export const AsathidaData = [
 	},
 	{
 		id: 4,
-		name: 'Swalahudheen Nurani Saquafi',
-		img: salahusthad,
+		name: 'Hafil Muhammed Nurani',
+		// img: salahusthad,
+	},
+	{
+		id: 5,
+		name: 'Abdu Raoof Saquafi',
+		// img: salahusthad,
 	},
 ];

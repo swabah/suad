@@ -3,7 +3,7 @@ import SubHeadings from '../components/SubHeadings'
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import Location from './Depetence/Contact/Location';
-import { FaAddressBook, FaLocationArrow, FaMailBulk, FaMobile, FaMobileAlt } from 'react-icons/fa';
+import {  FaMailBulk,FaMobileAlt } from 'react-icons/fa';
 import { AiOutlineEnvironment} from 'react-icons/ai';
 import img from './img/IMG_2747.JPG'
 

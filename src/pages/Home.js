@@ -4,7 +4,6 @@ import HomeFive from './Depetence/HomeFive';
 import HomeOne from './Depetence/HomeOne';
 import Homeseven from './Depetence/Homeseven';
 import Homesix from './Depetence/Homesix';
-import HOmeThree from './Depetence/HomeThree';
 import HomeTwo from './Depetence/HomeTwo';
 import TextHome from './Depetence/TextHome';
 import homImg1 from './img/IMG_2747.JPG' 
@@ -20,11 +19,6 @@ function Home() {
      homImg3,
      homImg4,
      homImg5,
-    //  "http://ahlussuffadars.in/assets/images/4.jpg",
-    // "http://ahlussuffadars.in/assets/images/2.jpg",
-    // "http://ahlussuffadars.in/assets/images/3.jpg",
-    // "http://ahlussuffadars.in/assets/images/g1.jpg",
-    // "http://ahlussuffadars.in/assets/images/1.jpg"
   ];
    const Contents = [
     'Experience Ahlussuffa',
@@ -40,7 +34,15 @@ function Home() {
         setTimeout(() => {
             setCurrent (current === length -1 ? 0 : current  + 1)
             setCurrent (current === lengthContent -1 ? 0 : current  + 1)
-        }, 7000);
+        }, 5000);
+
+        // function NextSlide() {
+        //   setCurrent((PrevSlide)=>(PrevSlide + 1) % length)
+        // }
+        // function PrevSlide() {
+        //   setCurrent((PrevSlide)=>(PrevSlide - 1 + length) % length)
+        // }
+        
   return (
     <div className='w-full h-full bg-white'>
        {images.map((slide,index)=>{
@@ -48,11 +50,16 @@ function Home() {
           <div key={index}>
             {index===current ?
             <div className='w-full relative h-screen bg-black'>
-            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full bg-center bg-black brightness-50 opacity-50 md:opacity-70 object-cover ' id='slidingImage' alt="" />
+            <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full brightness-50 bg-center object-cover' id='slidingImage' alt={`Slide ${index+1}`} />
+            {/* <div className='absolute top-1/3 left-0 bg-white w-20 h-auto'>
+            <button onClick={PrevSlide} className='w-1/2 cursor-pointer border-2 bg-red-500'>L</button>
+            <button onClick={NextSlide} className='w-1/2 cursor-pointer border-2 bg-blue-500'>R</button>
+            </div> */}
+            <div className='w-full h-full bg-black opacity-40 z-10 absolute top-0'></div>
               {Contents.map((Content,index) => {
                 if (current === index) {
                   return (
-                    <div className="absolute top-1/2 flex items-center justify-center w-full h-auto ">
+                    <div className="absolute top-1/2 flex z-10 items-center justify-center w-full h-auto ">
                       <TextHome  con={Content} />
                    </div> 
                   )

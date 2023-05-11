@@ -9,12 +9,12 @@ export const menuItems ={
             url : '/RecMessege'
         },
         {
-            name : 'Stundents Union',
-            url : '/Committee'
-        },
-        {
             name : 'Our faculty',
             url :'/Asathida'
+        },
+        {
+            name : 'Stundents Union',
+            url : '/Committee'
         },
         {
             name : 'Baithul Hikma',

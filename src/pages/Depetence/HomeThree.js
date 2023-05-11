@@ -1,7 +1,4 @@
 import React from 'react'
-import Teacher from '../img/Teacher.png'
-import Computerr from '../img/Computerr.png'
-import Library from '../img/Library.png'
 import ArrowrighT from '../img/Arrowright.png'
 import Naseeha1 from '../img/Naseeha1.jpeg'
 import librarypng from '../img/librarypng.png'

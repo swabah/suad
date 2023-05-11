@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
 import SubHeadings from '../components/SubHeadings'
 import img from './img/img5.jpeg'
 import links from '../assets/Links'

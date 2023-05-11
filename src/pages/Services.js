@@ -2,7 +2,6 @@ import React from 'react'
 import SubHeadings from '../components/SubHeadings'
 import Servicecards from './Depetence/Services/Servicecards'
 import { ServiceCardData } from '../data/ServiceCardData'
-import { motion } from 'framer-motion'
 
 function Services() {
 

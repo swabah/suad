@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
 import EventsCard from './Events/EventsCard'
 import { Link } from 'react-router-dom'
 import LinkTags from '../../assets/LinkTags'
@@ -7,7 +6,6 @@ import { EventData } from '../../data/EventlistData'
 
 
 function Homeseven() {
-    const link = 'www.facebook.com/ahlussuffadars/'
   return (
     <div className='w-full space-y-5 text-[#1c415d] h-auto bg-gray-100  px-3 md:px-7 lg:px-20  py-7 md:py-10 lg:py-12 xl:py-14 '>
      <div className='w-full flex items-center md:pt-1  pb-2 justify-between'>

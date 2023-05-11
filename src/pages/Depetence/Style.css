@@ -1,21 +1,19 @@
 #slidingImage{
     animation: entry 1s ease;
-    transition:opacity .3s ease, transform .9s ease;
+    transition:opacity .1s ease, transform 3s ease;
 }
 #Blinking{
-    animation: entry .8s ease;
-    transition:opacity .1s ease, transform 1s ease;
+    animation: entry 10s ease;
+    transition:opacity .5s ease, transform 4s ease;
 }
 @keyframes entry{
     0%{
-         transform:translateX(0);
-         opacity:0.1;
+        transform: translateX(4);
+         opacity:0.8;
     }
     100%{
-
-       
-        transform:translateX(0);
-        opacity:0.1.5;
+        transform: translateX(0);
+        opacity:1;
     }
     
 }

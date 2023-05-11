@@ -1,10 +1,6 @@
 import React from 'react'
 import SubHeadings from '../components/SubHeadings'
 import arshadusthad from './img/arshadusthad.jpg'
-import bg1 from './img/bg1.png'
-import bg2 from './img/bg2.png'
-import bg3 from './img/bg3.png'
-import { Link } from 'react-router-dom'
 
 function PreMessege() {
   return (

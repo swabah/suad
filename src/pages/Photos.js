@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SubHeadings from '../components/SubHeadings'
 import {Tab, TabList, TabPanel, Tabs} from 'react-tabs'
 import PhotosItem from './Depetence/Gallery/PhotosItem'
 import { GallaryData } from '../data/GallaryData'
 import '../pages/Depetence/Style.css'
-import { getDownloadURL, listAll, ref } from 'firebase/storage'
+import { ref } from 'firebase/storage'
 import { storage } from '../firebase/firebase-config'
 
 function Photos() {
-
+ 
+    const storageRef = ref(storage, "Committe" );
+    console.log(storageRef)
   return (
     <div className='w-full h-auto bg-white  '>
       <SubHeadings subheading='Photos'/>
       <div className='w-full text-[#1c415d] h-full  px-2 md:px-7 lg:px-20  mt-12'>
         <div className=' rounded w-full h-full p-2 md:p-3 lg:p-5'>
+           
             <Tabs className='w-full h-full mt-9 rounded-md inner-shadow-lg '>
                <TabList id='Eventtext' className=' flex  w-full bg-white h-full border-b overflow-y-hidden '>
                  <Tab className='cursor-pointer relative flex flex-row w-auto items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-b-2 md:border-b-4 border-r border-transparent hover:border-[#00ab4e] px-2 md:px-2'>
@@ -41,7 +44,10 @@ function Photos() {
                  </Tab>
                </TabList>
                  <TabPanel className='w-full h-full pt-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-auto items-center gap-1 md:gap-3'>
-                     {GallaryData.DarsGroundPhoto.map((imgdata)=>(
+                     {/* {url.map((index,imgdata)=>(
+                         <PhotosItem img={imgdata.img} id={index} />
+                     ))} */}
+                      {GallaryData.DarsGroundPhoto.map((imgdata)=>(
                          <PhotosItem img={imgdata.img} id={imgdata.id} />
                      ))}
                  </TabPanel>
