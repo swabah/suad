@@ -23,8 +23,8 @@ export const EventData = [
         id:'1',
         imgE:tazyin,
         link: link,
-        head:'Thazyi',
-        para:"അഹ്‌ലുസ്സുഫയിലെ  മുപ്പതിലേറെ വരുന്ന ഹാഫിളുകൾക്കായി സംഘടിപ്പിക്കുന്ന..... രണ്ടാഴ്ചകാലത്തെ തസ് യീൻ ദൗറ കാമ്പയിൻ ഹാഫിള് അബൂബക്കർ അദനിയുടെ നേതൃത്വത്തിൽ ഫെബ്രുവരി 13 മുതൽ ആരംഭിക്കുന്നു."
+        head:'Thazyin',
+        para:"അഹ്‌ലുസ്സുഫയിലെ  മുപ്പതിലേറെ വരുന്ന ഹാഫിളുകൾക്കായി സംഘടിപ്പിക്കുന്ന രണ്ടാഴ്ചകാലത്തെ തസ് യീൻ ദൗറ കാമ്പയിൻ ഹാഫിള് അബൂബക്കർ അദനിയുടെ നേതൃത്വത്തിൽ ഫെബ്രുവരി 13 മുതൽ ആരംഭിക്കുന്നു."
     },
     {
         id:'2',
@@ -90,42 +90,42 @@ export const EventData = [
         para:"Thanks Go green; പുക'യരുത്', കലയാവണം 'ലഹരി'"
     },
     {
-        id:"",
+        id:"11",
         imgE:KalaYZone,
         link:link,
         head:'Suffamehfil22',
         para:"Individual champions of Go Green; The ninth edition of Suffa Mehfil"
     },
     {
-        id:"",
+        id:"12",
         imgE:KalaCZone,
         link:link,
         head:'#Suffamehfil22',
         para:"Individual champions of Go Green; The ninth edition of Suffa Mehfil"
     },
     {
-        id:"",
+        id:"13",
         imgE:KalaBZone,
         link:link,
         head:'#Suffamehfil22',
         para:"Individual champions of Go Green; The ninth edition of Suffa Mehfil"
     },
     {
-        id:"",
+        id:"14",
         imgE:SargaYZone,
         link:link,
         head:'#Suffamehfil22',
         para:"Individual champions of Go Green; The ninth edition of Suffa Mehfil"
     },
     {
-        id:"",
+        id:"15",
         imgE:SargaCZone,
         link:link,
         head:'#Suffamehfil22',
         para:"Individual champions of Go Green; The ninth edition of Suffa Mehfil"
     },
     {
-        id:"",
+        id:"16",
         imgE:SargaBZone,
         link:link,
         head:'#Suffamehfil22',

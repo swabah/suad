@@ -3,10 +3,10 @@ import { useCountUp } from 'react-countup';
 import Chat from '../../assets/Chat';
 
 function HomeOne() {
-  	useCountUp({ ref: '1', end: 6, duration: 15 });
-	useCountUp({ ref: '2', end: 120, duration: 15 });
-	useCountUp({ ref: '3', end: 46, duration: 15 });
-	useCountUp({ ref: '4', end: 20, duration: 15 });
+  useCountUp({ ref: '1', end: 6, duration: 20 });
+	useCountUp({ ref: '2', end: 150, duration: 20 });
+	useCountUp({ ref: '3', end: 56, duration: 20 });
+	useCountUp({ ref: '4', end: 30, duration: 20 });
   return (
     <div className='w-full mt-5 md:mt-16 bg-white py-7 md:py-12 lg:py-14 h-auto  px-2 md:px-7 lg:px-20 '>
      <Chat/>

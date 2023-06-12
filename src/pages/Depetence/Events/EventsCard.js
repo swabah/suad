@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../Style.css'
+import { useNavigate } from 'react-router-dom'
 
 function EventsCard(props) {
 
+  const navigate = useNavigate()
   return (
     <motion.div initial={{ opacity: 0 }}
 			animate={{ opacity: 1, delay: 1 }}
@@ -13,7 +15,7 @@ function EventsCard(props) {
 				delay: 0.15,
 			}} className='w-full h-auto '>
 
-    <div className="cursor-pointer block rounded-lg  bg-transparent shadow-indigo-100 w-full h-full">
+    <div onClick={() => { navigate(`/Event/${props.id}`)}} className="cursor-pointer block rounded-lg  bg-transparent shadow-indigo-100 w-full h-full">
         <img alt="Home" src={props.imgE}  className="w-full h-auto drop-shadow-md object-cover" />
         <div className="mt-1 lg:mt-2 w-full h-full">
           <div>

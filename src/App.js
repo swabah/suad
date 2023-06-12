@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './App.css'
-import {BrowserRouter as Router,Routes,Route, useNavigate} from 'react-router-dom'
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Library from './pages/Library'
@@ -22,6 +20,7 @@ import SuffaDigi from "./pages/SuffaDigi";
 import Ahlussuffa from "./pages/Ahlussuffa";
 
 import { inject } from '@vercel/analytics';
+import Eventmodal from "./assets/Eventmodal";
  
 inject();
 
@@ -33,14 +32,18 @@ function App() {
   {/* <AdmitionResult/> */}
     <Routes>
       <Route path="/" element={<Layout/>}>
-        <Route index element={<Home/>} />
+        <Route path='/' element={<Home/>} >
+           <Route path=':id' element={<Eventmodal/>}/>
+        </Route>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/library" element={<Library/>}/>
         <Route path="/BSprogrammes" element={<BS/>}/>
         <Route path="/HSprogrammes" element={<HS/>}/>
         <Route path="/Services" element={<Services/>}/>
         <Route path="/Ahlussuffa" element={<Ahlussuffa/>}/>
-        <Route path="/Event" element={<Events/>}/>
+        <Route path="/Event" element={<Events/>}>
+          <Route path=':id' element={<Eventmodal/>}/>
+        </Route>
         <Route path="/RecMessege" element={<RecMessege/>}/>
         <Route path="/Committee" element={<Committee/>}/>
         <Route path="/Asathida" element={<Asathida/>}/>

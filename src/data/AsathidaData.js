@@ -1,6 +1,5 @@
 // Import images
 import arshadusthad from '../pages/img/arshadusthad.jpg'
-import salahusthad from '../pages/img/salahusthad.jpg'
 import thangal from '../pages/img/thangal.jpg'
 import aliusthad from '../pages/img/Aliusthad.jpg'
 
@@ -23,7 +22,7 @@ export const AsathidaData = [
 	},
 	{
 		id: 4,
-		name: 'Hafil Muhammed Nurani',
+		name: 'Hafil Muhammed Saqaufi',
 		// img: salahusthad,
 	},
 	{

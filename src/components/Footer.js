@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Banner from './Banner';
 import { FaFacebook, FaInstagram, FaYoutubeSquare } from 'react-icons/fa'
 import logo from './ahlussuffalogo1.png'
 import links from '../assets/Links'
@@ -14,7 +13,6 @@ function Footer() {
   }, []);
   return (
     <div>
-       {/* <Banner/> */}
   <div class=" px-2 md:px-7 lg:px-20 bg-[#032c4b] backdrop-blur-lg py-8 md:py-12">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>

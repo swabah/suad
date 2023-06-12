@@ -35,13 +35,6 @@ function Home() {
             setCurrent (current === length -1 ? 0 : current  + 1)
             setCurrent (current === lengthContent -1 ? 0 : current  + 1)
         }, 5000);
-
-        // function NextSlide() {
-        //   setCurrent((PrevSlide)=>(PrevSlide + 1) % length)
-        // }
-        // function PrevSlide() {
-        //   setCurrent((PrevSlide)=>(PrevSlide - 1 + length) % length)
-        // }
         
   return (
     <div className='w-full h-full bg-white'>
@@ -51,31 +44,25 @@ function Home() {
             {index===current ?
             <div className='w-full relative h-screen bg-black'>
             <img src={slide} className='w-full shadow-lg shadow-indigo-100 h-full brightness-50 bg-center object-cover' id='slidingImage' alt={`Slide ${index+1}`} />
-            {/* <div className='absolute top-1/3 left-0 bg-white w-20 h-auto'>
-            <button onClick={PrevSlide} className='w-1/2 cursor-pointer border-2 bg-red-500'>L</button>
-            <button onClick={NextSlide} className='w-1/2 cursor-pointer border-2 bg-blue-500'>R</button>
-            </div> */}
             <div className='w-full h-full bg-black opacity-40 z-10 absolute top-0'></div>
               {Contents.map((Content,index) => {
                 if (current === index) {
-                  return (
+                  // return (
                     <div className="absolute top-1/2 flex z-10 items-center justify-center w-full h-auto ">
                       <TextHome  con={Content} />
                    </div> 
-                  )
+                  // )
                 }
               })}
             </div>
-            :''
-          }
-          </div>
-        )
+            : null
+             }
+            </div>
+          )
        })}
 
        <HomeOne/>
        <HomeTwo/>
-       {/* <HomeFour/> */}
-       {/* <HOmeThree/> */}
        <HomeFive/>
        <Homeseven/>
        <Homesix/>
