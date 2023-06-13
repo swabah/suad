@@ -47,11 +47,11 @@ function Home() {
             <div className='w-full h-full bg-black opacity-40 z-10 absolute top-0'></div>
               {Contents.map((Content,index) => {
                 if (current === index) {
-                  // return (
+                  return (
                     <div className="absolute top-1/2 flex z-10 items-center justify-center w-full h-auto ">
                       <TextHome  con={Content} />
                    </div> 
-                  // )
+                  )
                 }
               })}
             </div>
