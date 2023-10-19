@@ -20,7 +20,6 @@ import SuffaDigi from "./pages/SuffaDigi";
 import Ahlussuffa from "./pages/Ahlussuffa";
 
 import { inject } from '@vercel/analytics';
-import Eventmodal from "./assets/Eventmodal";
  
 inject();
 
@@ -29,21 +28,16 @@ inject();
 function App() {
   return <>
   <Router>
-  {/* <AdmitionResult/> */}
     <Routes>
       <Route path="/" element={<Layout/>}>
-        <Route path='/' element={<Home/>} >
-           <Route path=':id' element={<Eventmodal/>}/>
-        </Route>
+        <Route path='/' element={<Home/>} />
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/library" element={<Library/>}/>
         <Route path="/BSprogrammes" element={<BS/>}/>
         <Route path="/HSprogrammes" element={<HS/>}/>
         <Route path="/Services" element={<Services/>}/>
         <Route path="/Ahlussuffa" element={<Ahlussuffa/>}/>
-        <Route path="/Event" element={<Events/>}>
-          <Route path=':id' element={<Eventmodal/>}/>
-        </Route>
+        <Route path="/Event" element={<Events/>}/>
         <Route path="/RecMessege" element={<RecMessege/>}/>
         <Route path="/Committee" element={<Committee/>}/>
         <Route path="/Asathida" element={<Asathida/>}/>

@@ -20,16 +20,6 @@ function Committee() {
 			setShowModal(false);
 		}
 	}
-
-  // const [fix, setfix] = useState(false);
-  // const Changecolor = () =>{
-  //    if (window.scrollY >= 20) {
-  //      setfix(true)
-  //    }else (
-  //      setfix(false)
-  //    ) 
-  // }
-  // window.addEventListener('scroll' , Changecolor)
   
   return (
     <div className='w-full text-[#1c415d] h-auto pb-12 bg-white '>

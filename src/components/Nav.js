@@ -30,7 +30,7 @@ export const Nav = () => {
 
   return (
     <header>
-      <nav className={`flex justify-between items-center ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#1c415d] shadow-lg transition duration py-3.5 h-16 md:h-20 lg:h-24 bg-white bg-opacity-90' : 'text-[#fff] h-28 md:h-32 py-6 md:py-6 bg-transparent'} z-30 fixed top-0  w-full px-6 md:px-7 lg:px-20 `} aria-label="Global">
+      <nav className={`flex justify-between items-center ${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#070307] shadow-lg transition duration py-3.5 h-16 md:h-20 lg:h-24 bg-white bg-opacity-90' : 'text-[#e7cceb] h-28 md:h-32 py-6 md:py-6 bg-transparent'} z-30 fixed top-0  w-full px-6 md:px-7 lg:px-20 `} aria-label="Global">
         <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="flex lg:flex-1">
           {fix ?
            <Link className='' to='/'>
@@ -49,12 +49,12 @@ export const Nav = () => {
             onClick={() => setDropdownOpen(true)} 
           >
             <span className="sr-only">Open main menu</span>
-            <FaAlignRight className={`h-6 w-6 ${fix ? 'text-black' : 'text-white'} `} aria-hidden="true" />
+            <FaAlignRight className={`h-6 w-6 ${fix ? 'text-[#070307]' : 'text-[#e7cceb]'} `} aria-hidden="true" />
           </button>
         </div>
         <Popover.Group className="hidden lg:flex space-x-4 lg:space-x-9">
            <Popover className="relative">
-           <Popover.Button className="flex outline-none text-sm lg:text-base uppercase items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6">
+           <Popover.Button className="flex outline-none text-sm lg:text-base uppercase items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#4aa23f] font-medium  leading-6">
               <Link onClick={() => setDropdownOpen(false)} to='/'>
                  Home
                </Link>
@@ -63,7 +63,7 @@ export const Nav = () => {
            <Popover 
             className="relative">
                 <Popover.Button
-                  className={`flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6`}>
+                  className={`flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#4aa23f] font-medium  leading-6`}>
                     Know Us
                   <FaChevronDown className="h-4 w-4 font-light flex-none text-gray-400" aria-hidden="true" />
                 </Popover.Button>
@@ -83,7 +83,7 @@ export const Nav = () => {
                       className="py-3 rounded">
                         {menuItems.know.map((item)=>(
                            <Link to={item.url}  onClick={() => setDropdownOpen(false)} >
-                               <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                               <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                                  <p className='' >{item.name}</p>
                                </div>
                             </Link>
@@ -93,7 +93,7 @@ export const Nav = () => {
                  </Transition>
             </Popover>
          <Popover className="relative">
-           <Popover.Button className="flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm  hover:text-[#72bf44]   drop-shadow-md font-medium  leading-6">
+           <Popover.Button className="flex outline-none text-sm lg:text-base uppercase  items-center gap-x-1 text-sm  hover:text-[#4aa23f]   drop-shadow-md font-medium  leading-6">
               Programmes
              <FaChevronDown className="h-4 w-4 font-light flex-none text-gray-400" aria-hidden="true" />
            </Popover.Button>
@@ -111,7 +111,7 @@ export const Nav = () => {
                <div className="py-3 rounded">
                 {menuItems.Programmes.map((item)=>(
                <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                      <p className='' >{item.name}</p>
                    </div>
                 </Link>
@@ -122,7 +122,7 @@ export const Nav = () => {
             </Popover>
          <Popover className="relative">
            <Popover.Button
-            className="flex outline-none text-sm lg:text-base uppercase   items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6">
+            className="flex outline-none text-sm lg:text-base uppercase   items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#4aa23f] font-medium  leading-6">
              Resources
             <FaChevronDown className="h-4 w-4 font-light flex-none text-gray-400" aria-hidden="true" />
            </Popover.Button>
@@ -140,7 +140,7 @@ export const Nav = () => {
                <div className="py-3 rounded">
                {menuItems.Resources.map((item)=>(
                <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                      <p className='' >{item.name}</p>
                    </div>
                 </Link>
@@ -150,7 +150,7 @@ export const Nav = () => {
             </Transition>
             </Popover>
          <Popover className="relative">
-           <Popover.Button className="flex  outline-none text-sm lg:text-base uppercase   items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#72bf44] font-medium  leading-6">
+           <Popover.Button className="flex  outline-none text-sm lg:text-base uppercase   items-center gap-x-1 text-sm   drop-shadow-md hover:text-[#4aa23f] font-medium  leading-6">
              Reach us
              <FaChevronDown className="h-4 w-4 font-light flex-none text-gray-400" aria-hidden="true" />
            </Popover.Button>
@@ -168,7 +168,7 @@ export const Nav = () => {
                <div className="py-3 rounded">
                 {menuItems.ReachUs.map((item)=>(
                <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#72bf44] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                   <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                      <p className='' >{item.name}</p>
                    </div>
                 </Link>
@@ -198,11 +198,11 @@ export const Nav = () => {
             </div>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-[#070307]"
               onClick={() => setDropdownOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <FaAlignRight className="h-6 w-6 text-[#1c415d]   hover:text-[#72bf44]" aria-hidden="true" />
+              <FaAlignRight className="h-6 w-6 text-[#070307]   hover:text-[#070307]" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -211,7 +211,7 @@ export const Nav = () => {
                 <Disclosure as="div" className="-mx-3 ">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full cursor-pointer items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#1c415d] hover:text-[#72bf44] font-semibold leading-7 hover:bg-gray-200 border-b">
+                      <Disclosure.Button className="flex w-full cursor-pointer items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#070307] hover:text-[#4aa23f] font-semibold leading-7 hover:bg-gray-200 border-b">
                         Known'us
                         <FaChevronCircleDown
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none ')}
@@ -221,11 +221,11 @@ export const Nav = () => {
                       <Disclosure.Panel className="mt-2 space-y-2">
                           <Disclosure.Button
                             as="a"
-                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-[#070307] hover:bg-gray-50"
                           >
                              {menuItems.know.map((item)=>(
                               <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#070307] decoration-none w-full h-auto hover:text-[#4aa23f] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                   <p className='' >{item.name}</p>
                                 </div>
                                </Link>
@@ -238,7 +238,7 @@ export const Nav = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#1c415d] hover:text-[#72bf44] font-semibold leading-7 hover:bg-gray-200 border-b">
+                      <Disclosure.Button className="flex w-full items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#070307] hover:text-[#4aa23f] font-semibold leading-7 hover:bg-gray-200 border-b">
                         Programmes
                         <FaChevronCircleDown
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -248,11 +248,11 @@ export const Nav = () => {
                       <Disclosure.Panel className="mt-2 space-y-2">
                           <Disclosure.Button
                             as="a"
-                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-[#070307] hover:bg-gray-50"
                           >
                             {menuItems.Programmes.map((item)=>(
                             <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#070307] decoration-none w-full h-auto hover:text-[#4aa23f] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                 <p className='' >{item.name}</p>
                               </div>
                              </Link>
@@ -265,7 +265,7 @@ export const Nav = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#1c415d] hover:text-[#72bf44] font-semibold leading-7 hover:bg-gray-200 border-b">
+                      <Disclosure.Button className="flex w-full items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#070307] hover:text-[#4aa23f] font-semibold leading-7 hover:bg-gray-200 border-b">
                          Resources
                         <FaChevronCircleDown
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -275,11 +275,11 @@ export const Nav = () => {
                       <Disclosure.Panel className="mt-2 space-y-2">
                           <Disclosure.Button
                             as="a"
-                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-[#070307] hover:bg-gray-50"
                           >
                             {menuItems.Resources.map((item)=>(
                               <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#070307] decoration-none w-full h-auto hover:text-[#4aa23f] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                   <p className='' >{item.name}</p>
                                 </div>
                                </Link>
@@ -292,7 +292,7 @@ export const Nav = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#1c415d] hover:text-[#72bf44] font-semibold leading-7 hover:bg-gray-200 border-b">
+                      <Disclosure.Button className="flex w-full items-center justify-between  py-2 pl-3 pr-3.5 text-base text-[#070307] hover:text-[#4aa23f] font-semibold leading-7 hover:bg-gray-200 border-b">
                         Reach Us
                         <FaChevronCircleDown
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none ')}
@@ -302,11 +302,11 @@ export const Nav = () => {
                       <Disclosure.Panel className="mt-2 space-y-2">
                           <Disclosure.Button
                             as="a"
-                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-1 space-y-2 text-sm font-semibold leading-7 text-[#070307] hover:bg-gray-50"
                           >
                             {menuItems.ReachUs.map((item)=>(
                               <Link to={item.url}  onClick={() => setDropdownOpen(false)}>
-                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#1c415d] decoration-none w-full h-auto hover:text-[#72bf44] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
+                                  <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className="text-[#070307] decoration-none w-full h-auto hover:text-[#4aa23f] py-1.5 hover:bg-gray-100 px-4  lg:px-6 text-sm lg:text-base uppercase relative  drop-shadow-md font-medium">
                                   <p className='' >{item.name}</p>
                                 </div>
                                </Link>

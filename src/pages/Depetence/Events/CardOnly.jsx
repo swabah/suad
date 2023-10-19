@@ -1,51 +1,45 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import '../Style.css'
-import { EventData } from '../../../data/EventlistData'
-import { useNavigate, useParams } from 'react-router-dom';
-import { FiX } from 'react-icons/fi';
+import bground from '../../../pages/img/bg-round.svg'
+import {
+  Modal,
+  ModalOverlay,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  ModalContent,
+} from '@chakra-ui/react'
 
+function CardOnly({ events }) {
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
-function CardOnly({onclose}) {
-    const { id } = useParams();
-    const navigate = useNavigate()
 
   return (
-    <motion.div initial={{ opacity: 0 }}
-	animate={{ opacity: 1, delay: 1 }}
-	transition={{
-		ease: 'easeInOut',
-		duration: 0.7,
-		delay: 0.15,
-	}} className='flex flex-col items-center justify-center h-full w-full'>
-		<div className="modal-wrapper flex items-center z-30">
-			<div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl backdrop-blure-lg bg-white bg-opacity-90 max-h-screen shadow-lg flex-row rounded-lg relative">
-				<div className="modal-header flex justify-between gap-10 p-5 border-b border-gray-200">
-					<h5 className=" text-primary-dark dark:text-primary-light text-xl">
-						Welcome, Students Login Corner
-					</h5>
-					<button
-						onClick={onclose || navigate('/Event')}
-						className="px-4 font-bold text-primary-dark dark:text-primary-light"
-					>
-						<FiX className="text-3xl" />
-					</button>
-				</div>
-                <div className='modal-body p-5 w-full h-full'>
-                    <img alt="Home" src={EventData[id - 1].imgE}  className="w-full h-96 drop-shadow-md p-5 object-cover" />
-                    <div className="mt-1 lg:mt-2 w-full h-full flex flex-col items-start p-5">
-                        <div>
-                          <h2 className="text-lg lg:text-xl font-medium pt-2 text-[#1c415d] uppercase">{EventData[id - 1].head}</h2>
-                        </div>
-                        <div>
-                          <h2 className="select-none py-0.5 lg:py-2 lg:py-0 lg:pb-2 xl:py-2 mt-0.5 lg:mt-1.5 font-normal text-lg ">{EventData[id - 1].para}</h2>
-                          {/* <a href={EventData[id - 1].link} className="font-medium text-xs text-blue-700 mt-0.5 underline underline-offset-1">Read more</a> */}
-                        </div>
-                    </div>
-                </div>
-                </div>
+    <>
+      <div onClick={onOpen} className="relative cursor-pointer block rounded-lg  bg-transparent shadow-indigo-100 w-full h-full">
+        <div className='hover:opacity-70 transition-all opacity-0 z-10 rounded-md absolute bottom-0 flex flex-col items-start justify-end p-4 inset-0 w-full h-full bg-gradient-to-t from-black to-transparent'>
+            <h2 className=" lg:text-lg font-semibold pt-2 text-[#fff] uppercase">{events.head}</h2>
+            <p id='Eventtext' className="text-white select-none text-base  line-clamp-2 pt-1">{events.para}</p>
+        </div>
+        <img alt="Home" src={events.imgE} className="rounded-md w-full h-full drop-shadow-md object-cover" />
+      </div>
+      <Modal onClose={onClose} isOpen={isOpen} isCentered>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader><h2 className='text-[#1c415d] '>{events.head}</h2></ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <div className="flex flex-row relative">
+              <div className=' flex flex-col items-start w-full h-full'>
+                <img alt="Home" src={events.imgE} className="w-full md:h-full rounded-md drop-shadow-md object-cover" />
+                <h2 className="py-4 select-none font-normal text-sm md:text-lg ">{events.para}</h2>
+              </div>
+              <img className='absolute right-0 top-0 w-44 -z-10' src={bground} alt="bg-round" />
             </div>
-    </motion.div>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
   )
 }
 
