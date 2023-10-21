@@ -1,6 +1,5 @@
 import React from 'react'
 import SubHeadings from '../components/SubHeadings'
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import VideosItem from './Depetence/Gallery/VideosItem'
 import { GallaryData } from '../data/GallaryData'
 
