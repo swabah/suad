@@ -6,7 +6,7 @@ import { Accordion, AccordionBody, AccordionHeader } from '@material-tailwind/re
 
 const Library = () => {
 
-	const [open, setOpen] = useState(1);
+	const [open, setOpen] = useState(0);
  
 	const handleOpen = (value) => {
 	  setOpen(open === value ? 0 : value);
@@ -16,11 +16,6 @@ const Library = () => {
 		<div className='bg-white '>
 			<SubHeadings subheading='Baithul Hikma'/>
 			<div   className='px-2 md:px-7 lg:px-20   pt-12  pb-12 '>
-				<div className='w-full hidden md:flex flex-col items-start select-none '>
-        		  	<h2  className='text-base md:text-xl uppercase p-1 shadow-sm w-auto h-auto flex items-center px-5 rounded bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
-        		  	   <span className='uppercase '>Baithul Hikma</span> 
-        		  	</h2>
-        		</div>
 				<div className='  text-[#1c415d] md:mt-10  mb-12 w-full h-full'>
         		    <div className='items-center w-full h-auto md:p-5 rounded-lg md:shadow-lg md:border grid grid-cols-1 gap-5 md:gap-0 grid-rows-auto lg:grid-cols-4'>
         		        <img className='object-cover w-full lg:w-96 h-52 md:rounded drop-shadow-md' src={library} alt="" />

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Muad from './Depetence/Committee/Muad'
 import Suad from './Depetence/Committee/Suad'
 import SubHeadings from '../components/SubHeadings'
 import LoginModal from '../assets/LoginModal'
@@ -26,7 +25,6 @@ function Committee() {
       <SubHeadings subheading='Working Committee'/>
       <div className='w-full   px-2 md:px-5 lg:px-20  mt-12'>
         <Suad/>
-        <Muad/> 
         <div className={`mt-10  `}>
             <div className='w-full h-auto  flex  items-start'>
               <h2  className='text-lg  uppercase shadow-lg w-full h-auto flex items-center justify-between  rounded  bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>

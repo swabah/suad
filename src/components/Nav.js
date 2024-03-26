@@ -93,7 +93,7 @@ export const Nav = () => {
                   className="py-3 rounded">
                   {menuItems.know.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)} >
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none text-black w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>
@@ -121,7 +121,7 @@ export const Nav = () => {
                 <div className="py-3 rounded">
                   {menuItems.Programmes.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)}>
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="text-black decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>
@@ -150,7 +150,7 @@ export const Nav = () => {
                 <div className="py-3 rounded">
                   {menuItems.Resources.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)}>
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="text-black decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>
@@ -178,7 +178,7 @@ export const Nav = () => {
                 <div className="py-3 rounded">
                   {menuItems.ReachUs.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)}>
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className=" text-black decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>

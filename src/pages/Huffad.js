@@ -7,9 +7,6 @@ function Huffad() {
     <div className='w-full h-full '>
     <SubHeadings subheading='Suffathul huffad'/>
     <div className='w-full h-full flex flex-col items-start select-none px-3 md:px-7 lg:px-20   py-12  '>
-        <h2  className='text-base hidden md:text-xl uppercase p-1 shadow-sm w-auto h-auto md:flex items-center px-5 rounded bg-[#72bf44] font-medium drop-shadow-lg text-white backdrop-shadow-xl '>
-           <span className='uppercase '>Suffathul huffad</span> 
-        </h2>
         <div className=' text-[#1c415d] mt-10  mb-12 w-full h-full'>
             <div className='items-center w-full h-auto md:p-5 rounded-lg md:shadow-lg md:border grid grid-cols-1 gap-5 md:gap-0 grid-rows-auto lg:grid-cols-4'>
                 <img className='object-cover w-full lg:w-96 h-52 md:rounded drop-shadow-md' src={suffathulhuffadDesigned} alt="" />
