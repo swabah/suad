@@ -32,14 +32,14 @@ export const Nav = () => {
 
   return (
     <header className={`${fix ? 'backdrop-blur-md  bg-opacity-90 text-[#070307] shadow-lg transition duration  bg-white ' : 'text-[#ffff] bg-transparent'} z-30 fixed top-0  w-full`}>
-      <a href='https://suffamehfil2k23.vercel.app/' style={{ backgroundImage: `url(${bannarBul})` }} className={`relative  text-sm md:text-base text-[#ffff] py-2 shadow-sm  backdrop-blur-md  bg-opacity-80 px-6 md:px-7 lg:px-20 w-full flex items-center justify-between `}>
+      {/* <a href='https://suffamehfil2k23.vercel.app/' style={{ backgroundImage: `url(${bannarBul})` }} className={`relative  text-sm md:text-base text-[#ffff] py-2 shadow-sm  backdrop-blur-md  bg-opacity-80 px-6 md:px-7 lg:px-20 w-full flex items-center justify-between `}>
         <div className='absolute inset-0 w-full h-full bg-black opacity-70 -z-10'></div>
         <h2 className='  font-semibold'>Suffa Mehfil 2k23</h2>
         <button class={`relative pl-4 pr-10 py-1  overflow-hidden font-semibold rounded `}>Go App
           <span class=" animate-pulse absolute bg-[#4ea942] text-white top-0 right-1 px-5 pt-3 pb-1 text-xs tracking-wide text-center uppercase whitespace-no-wrap origin-bottom-left transform rotate-45 -translate-y-full translate-x-1/3 ">Live</span>
         </button>
       </a>
-      <div className='w-full loader-line'></div>
+      <div className='w-full loader-line'></div> */}
       <nav className={` ${fix ? 'py-3.5 ' : ' py-6'}  px-6 md:px-7 lg:px-20 flex justify-between items-center  `} aria-label="Global">
         <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="flex lg:flex-1">
           {fix ?
@@ -93,7 +93,7 @@ export const Nav = () => {
                   className="py-3 rounded">
                   {menuItems.know.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)} >
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>
@@ -121,7 +121,7 @@ export const Nav = () => {
                 <div className="py-3 rounded">
                   {menuItems.Programmes.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)}>
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>
@@ -150,7 +150,7 @@ export const Nav = () => {
                 <div className="py-3 rounded">
                   {menuItems.Resources.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)}>
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>
@@ -178,7 +178,7 @@ export const Nav = () => {
                 <div className="py-3 rounded">
                   {menuItems.ReachUs.map((item) => (
                     <Link to={item.url} onClick={() => setDropdownOpen(false)}>
-                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="text-[#d8b4df] decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
+                      <div onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }} className="decoration-none w-full h-auto hover:bg-gray-200 hover:text-[#4aa23f] p-1.5 px-4 drop-shadow-md  lg:px-6 text-sm lg:text-base uppercase relative  font-medium">
                         <p className='' >{item.name}</p>
                       </div>
                     </Link>

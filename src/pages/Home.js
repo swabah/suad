@@ -56,7 +56,7 @@ function Home() {
       <HomeOne />
       <HomeFive />
       <Homeseven />
-      <Homesix />
+      {/* <Homesix /> */}
     </div>
   );
 }
