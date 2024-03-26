@@ -33,24 +33,6 @@
     box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 
-#scrollshade::-webkit-scrollbar {
-    width: 3px;
-    border-radius: 5px;
-}
-
-#scrollshade::-webkit-scrollbar-thumb {
-    background-color: #1c415d;
-}
-
-#scrollBook::-webkit-scrollbar {
-    height: 1px;
-}
-
-#scrollBook::-webkit-scrollbar-thumb {
-    border-radius: 15px;
-    background-color: #1c415d46;
-}
-
 #Aboreto-font {
     font-family: 'Aboreto';
 }

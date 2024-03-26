@@ -14,26 +14,26 @@ function Photos() {
             <div className='w-full text-[#1c415d] h-full  px-2 md:px-7 lg:px-20  mt-12'>
                 <div className=' rounded w-full h-full'>
                     <Tabs className='w-full h-full'>
-                        <TabList className='py-2 scrollshade overflow-y-hidden'>
+                        <TabList className=' overflow-y-hidden'>
                             <Tab className='flex items-center'>
-                                <span class=" pr-2 text-xs md:text-sm tracking-wide truncate">Dars Ground</span>
-                                <span class=" px-0.5 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">New</span>
+                                <span class=" pr-2 text-sm md:text-base tracking-wide truncate">Dars Ground</span>
+                                <span class=" px-1 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">New</span>
                             </Tab>
                             <Tab className='flex items-center'>
-                                <span class=" pr-2 text-xs md:text-sm tracking-wide truncate">Suffa Mehfil</span>
-                                <span class=" px-0.5 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">Dec 2K22</span>
+                                <span class="  pr-2 text-sm md:text-base tracking-wide truncate">Suffa Mehfil</span>
+                                <span class=" px-1 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">Dec 2K22</span>
                             </Tab>
                             <Tab className='flex items-center'>
-                                <span class=" pr-2 text-xs md:text-sm tracking-wide truncate">Suffa Mehfil</span>
-                                <span class=" px-0.5 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">Jan 2K22</span>
+                                <span class="  pr-2 text-sm md:text-base tracking-wide truncate">Suffa Mehfil</span>
+                                <span class=" px-1 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">Jan 2K22</span>
                             </Tab>
                             <Tab className='flex items-center'>
-                                <span class=" pr-2 text-xs md:text-sm tracking-wide truncate">Suffa Mehfil</span>
-                                <span class=" px-0.5 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">2K21</span>
+                                <span class="  pr-2 text-sm md:text-base tracking-wide truncate">Suffa Mehfil</span>
+                                <span class=" px-1 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">2K21</span>
                             </Tab>
                             <Tab className='flex items-center'>
-                                <span class=" pr-2 text-xs md:text-sm tracking-wide truncate">sweetrabeeh</span>
-                                <span class=" px-0.5 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">2K22</span>
+                                <span class="  pr-2 text-sm md:text-base tracking-wide truncate">sweetrabeeh</span>
+                                <span class=" px-1 md:px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 md:rounded-full">2K22</span>
                             </Tab>
                         </TabList>
 

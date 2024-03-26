@@ -22,7 +22,7 @@ function KnowUs() {
         </div>
         <div className='mt-12 w-full border bg-[#72bf44] text-white  h-auto p-5 lg:p-8'>
           <h2 className='uppercase text-2xl lg:text-3xl font-semibold drop-shadow-md py-2'>Vision and Mission</h2>
-          <p className='capitalize text-base lg:text-lg'>Ahlussufla travelling on the right way to forge potential products by conducting efffective trainings and developmental bootcamps of highly qualified experts. And the Spiritual guid- ance of our Nurani&Saquafi Asathida is also moulding a Moral community of virtuosos. We know that Islam is highly misinterpreted in this scenario. Definitely our inten- tion is to keep us the way of prophet Muhammed(S.A. W).</p>
+          <p className='capitalize text-base lg:text-lg'>Ahlussuffa travelling on the right way to forge potential products by conducting efffective trainings and developmental bootcamps of highly qualified experts. And the Spiritual guid- ance of our Nurani&Saquafi Asathida is also moulding a Moral community of virtuosos. We know that Islam is highly misinterpreted in this scenario. Definitely our inten- tion is to keep us the way of prophet Muhammed(S.A. W).</p>
         </div>
         <div>
           <HomeFour />
